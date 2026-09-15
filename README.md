@@ -1,8 +1,10 @@
 # Olá, eu sou o Daniel Widal! 👋
 
-### 🚀 QA Engineer | API Testing & Quality Assurance
+### 🚀 QA Engineer & ## 🛡️ Analista de Segurança em Formação | Blue Team / SOC | Automação em Python
 
-Analista de Qualidade focado em **Testes de API REST**, **Automação E2E** e **Garantia de Qualidade**. Unindo minha bagagem de +3 anos em suporte técnico N1/N2, troubleshooting de redes/logs e minha formação em **Cibersegurança**, trago um perfil analítico para identificar e prevenir falhas antes da produção.
+Profissional de Cibersegurança com foco em **Blue Team / SOC**, análise de logs e automação em Python. Unindo +3 anos de experiência em suporte técnico N1/N2 (análise de logs, troubleshooting de redes e investigação de causa-raiz) e Analista de Qualidade de Software à formação em Cibersegurança (UniCesumar), trago um perfil investigativo e orientado a evidências para detecção e resposta a incidentes.
+
+Desenvolvo ferramentas próprias em Python para análise de vulnerabilidades e detecção de padrões de ataque em logs.
 
 ---
 
