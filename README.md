@@ -1,6 +1,6 @@
 # Olá, eu sou o Daniel Widal! 👋
 
-### 🚀 QA Engineer & ## 🛡️ Analista de Segurança em Formação | Blue Team / SOC | Automação em Python
+### 🚀 QA Engineer & 🛡️ Analista de Segurança em Formação | Blue Team / SOC | Automação em Python
 
 Profissional de Cibersegurança com foco em **Blue Team / SOC**, análise de logs e automação em Python. Unindo +3 anos de experiência em suporte técnico N1/N2 (análise de logs, troubleshooting de redes e investigação de causa-raiz) e Analista de Qualidade de Software à formação em Cibersegurança (UniCesumar), trago um perfil investigativo e orientado a evidências para detecção e resposta a incidentes.
 
