@@ -32,7 +32,7 @@ Desenvolvo ferramentas próprias em Python para análise de vulnerabilidades e d
 
 ---
 
-### 📌 Projetos em Destaque:
+### 📌 Projetos em Qualidade de Software (QA):
 
 * 🚀 **[noping-qa-api-tests](https://github.com/Pendragon711/noping-qa-api-tests)** — Suíte de testes automatizados para validação de latência UDP, estabilidade de rotas e SLAs em tempo real com JavaScript.
 * 🧪 **[automacao-cypress-serverest](https://github.com/Pendragon711/automacao-cypress-serverest)** — Automação E2E com Cypress e JavaScript focada em fluxos de autenticação, cenários negativos e regressão.
@@ -40,6 +40,10 @@ Desenvolvo ferramentas próprias em Python para análise de vulnerabilidades e d
 * ☁️ **[projeto-aws-s3-ec2](https://github.com/Pendragon711/projeto-aws-s3-ec2)** — Provisionamento de infraestrutura AWS Cloud com S3, EC2, VPC e Security Groups.
 * ⚕️ **[qa-healthtech-pipeline](https://github.com/Pendragon711/qa-healthtech-pipeline)** — Pipeline de Automação de Testes de API & E2E com CI/CD
 
+### 📌 Projetos em Cibersegurança:
+
+* 👻 **[GHOST - Web Pentest Framework]([https://github.com/Pendragon711/qa-healthtech-pipeline](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)** — ferramenta de pentest web desenvolvida em Python para reconhecimento, detecção e exploração de vulnerabilidades em aplicações web.
+  
 ---
 
 ### 🎓 Formação & Certificações
