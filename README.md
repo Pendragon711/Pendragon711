@@ -42,7 +42,7 @@ Desenvolvo ferramentas próprias em Python para análise de vulnerabilidades e d
 
 ### 📌 Projetos em Cibersegurança:
 
-* 👻 **[GHOST - Web Pentest Framework]([https://github.com/Pendragon711/qa-healthtech-pipeline](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)** — ferramenta de pentest web desenvolvida em Python para reconhecimento, detecção e exploração de vulnerabilidades em aplicações web.
+* 👻 **[GHOST - Web Pentest Framework](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)** — ferramenta de pentest web desenvolvida em Python para reconhecimento, detecção e exploração de vulnerabilidades em aplicações web.
   
 ---
 
