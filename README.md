@@ -1,7 +1,7 @@
 @'
 # Olá, eu sou o Daniel Widal! 👋
 
-### 🛡️ Analista de Cibersegurança | Blue Team / SOC | DevSecOps | Automação em Python
+### 🛡️ Analista de Cibersegurança | AppSec, Web Pentesting & API Security | DevSecOps
 
 Profissional de Cibersegurança com foco em **Blue Team / SOC**, análise de logs, detecção de incidentes e automação em Python. Unindo +3 anos de experiência em suporte técnico N1/N2 (análise de logs, troubleshooting de redes e investigação de causa-raiz) e Analista de Qualidade de Software à formação em Cibersegurança (UniCesumar), trago um perfil investigativo e orientado a evidências para detecção e resposta a incidentes.
 
