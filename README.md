@@ -1,95 +1,222 @@
-@'
-# Olá, eu sou o Daniel Widal! 👋
+# 🛡️ Daniel Widal — Cybersecurity
 
-### 🛡️ Analista de Cibersegurança | SOC & Blue Team | AppSec & Pentest
+### SOC N1 | Blue Team | SIEM | Threat Detection | Incident Response
 
-Profissional de Cibersegurança com foco em **Blue Team / SOC**, análise de logs, detecção de incidentes e automação em Python. Unindo +3 anos de experiência em suporte técnico N1/N2 (análise de logs, troubleshooting de redes e investigação de causa-raiz) e Analista de Qualidade de Software à formação em Cibersegurança (UniCesumar), trago um perfil investigativo e orientado a evidências para detecção e resposta a incidentes.
+Profissional de **Cibersegurança** com foco em **SOC N1, Blue Team, SIEM, análise de logs, detecção de ameaças e investigação de incidentes**.
 
-Desenvolvo ferramentas próprias em Python para análise de vulnerabilidades e detecção de padrões de ataque em logs.
+Desenvolvo laboratórios e ferramentas práticas para simular ataques, gerar eventos de segurança, investigar evidências e validar mecanismos de detecção.
+
+Meu portfólio combina **Wazuh, Linux, Python, Bash, MITRE ATT&CK, redes, segurança em Cloud e ferramentas de segurança ofensiva utilizadas em ambientes controlados**.
+
+> 🎯 **Objetivo:** atuar como **SOC Analyst N1 / Analista de Cibersegurança Jr.**, contribuindo com monitoramento, análise de alertas, investigação e resposta a incidentes.
 
 ---
 
-### 🛠️ Minha Stack & Ferramentas
+## 🛡️ Cybersecurity Stack
 
-**Security & Blue Team:**
+### 🔵 Blue Team / SOC
+
 <p align="left">
   <img src="https://img.shields.io/badge/Wazuh-3C8CBE?style=for-the-badge&logo=wazuh&logoColor=white" alt="Wazuh" />
-  <img src="https://img.shields.io/badge/SIEM-4B0082?style=for-the-badge&logo=elastic&logoColor=white" alt="SIEM" />
-  <img src="https://img.shields.io/badge/MITRE_ATT&CK-FF0000?style=for-the-badge&logo=mitre&logoColor=white" alt="MITRE ATT&CK" />
+  <img src="https://img.shields.io/badge/SIEM-4B0082?style=for-the-badge" alt="SIEM" />
+  <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-000000?style=for-the-badge&logo=mitre&logoColor=white" alt="MITRE ATT&CK" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
 </p>
 
-**Pentest & Offensive Security:**
+**Foco:** Security Monitoring • Log Analysis • Threat Detection • Alert Investigation • Event Correlation • Incident Analysis • Detection Engineering
+
+---
+
+### 🌐 Network Security
+
 <p align="left">
-  <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Nmap-4682B4?style=for-the-badge" alt="Nmap" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/TCP%2FIP-005571?style=for-the-badge" alt="TCP/IP" />
+</p>
+
+**Foco:** TCP/IP • Network Analysis • Traffic Analysis • Network Troubleshooting • Security Monitoring
+
+---
+
+### 🔴 Security Testing
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Burp%20Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge" alt="Metasploit" />
+  <img src="https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali Linux" />
   <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
-  <img src="https://img.shields.io/badge/Nmap-4682B4?style=for-the-badge&logo=nmap&logoColor=white" alt="Nmap" />
-  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge&logo=metasploit&logoColor=white" alt="Metasploit" />
-  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white" alt="Kali Linux" />
 </p>
 
-**Testing & Automation:**
-<p align="left">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white" alt="Cypress" />
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
-</p>
+Uso essas ferramentas principalmente em **ambientes controlados**, simulando técnicas de ataque para gerar eventos e validar mecanismos de detecção.
 
-**Bancos de Dados, Infra & Análise:**
+---
+
+### ☁️ Cloud & Infrastructure
+
 <p align="left">
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </p>
 
----
-
-### 📌 Projetos em Cibersegurança:
-
-* 🛡️ **[soc-lab-wazuh](https://github.com/Pendragon711/soc-lab-wazuh)** — Laboratório de SOC com Wazuh SIEM: simulação de ataques, detecção de brute force, análise de logs e mapeamento MITRE ATT&CK.
-* 👻 **[GHOST - Web Pentest Framework](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)** — Ferramenta de pentest web em Python para reconhecimento, detecção e exploração de vulnerabilidades, usada para validar as detecções do lab de SOC.
-
-### 📌 Projetos em Qualidade de Software (QA):
-
-* 🚀 **[noping-qa-api-tests](https://github.com/Pendragon711/noping-qa-api-tests)** — Suíte de testes automatizados para validação de latência UDP, estabilidade de rotas e SLAs em tempo real com JavaScript.
-* 🧪 **[automacao-cypress-serverest](https://github.com/Pendragon711/automacao-cypress-serverest)** — Automação E2E com Cypress e JavaScript focada em fluxos de autenticação, cenários negativos e regressão.
-* 🛍️ **[fake-store-api-testing](https://github.com/Pendragon711/fake-store-api-testing)** — Testes funcionais e automação de operações CRUD para APIs REST via Postman e Collection Runner.
-* ☁️ **[projeto-aws-s3-ec2](https://github.com/Pendragon711/projeto-aws-s3-ec2)** — Provisionamento de infraestrutura AWS Cloud com S3, EC2, VPC e Security Groups.
-* ⚕️ **[qa-healthtech-pipeline](https://github.com/Pendragon711/qa-healthtech-pipeline)** — Pipeline de Automação de Testes de API & E2E com CI/CD.
+**AWS:** EC2 • S3 • VPC • Security Groups • EBS
 
 ---
 
-### 🎓 Formação & Certificações
+# 🚨 Cybersecurity Projects
 
-* 🎓 **Graduação em Cibersegurança** — UniCesumar (Em andamento)
-* 📜 **Google Cybersecurity Professional Certificate** — Coursera
-* 📜 **AWS Cloud Practitioner Essentials** — Amazon Web Services
-* 📜 **Junior Cybersecurity Analyst** — Cisco Networking Academy
+## 🛡️ SOC Lab — Wazuh SIEM
+
+**Laboratório de SOC / Blue Team para monitoramento, detecção e investigação de eventos de segurança.**
+
+**Tecnologias:**
+
+`Wazuh` `SIEM` `Linux` `Kali Linux` `Metasploitable 2` `VirtualBox` `MITRE ATT&CK`
+
+### O que foi realizado
+
+* Construção de ambiente controlado para simulação de ataques.
+* Coleta e análise de logs de segurança.
+* Criação e ajuste de regras de detecção.
+* Correlação de eventos.
+* Investigação de comportamentos suspeitos.
+* Mapeamento de eventos para **MITRE ATT&CK**.
+* Simulação de **brute force SSH**.
+* Detecção do cenário de brute force em aproximadamente **10 segundos** no laboratório.
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/soc-lab-wazuh)**
 
 ---
 
-### 📊 Estatísticas do GitHub
+## 👻 GHOST — Security Testing Framework
+
+**Framework modular desenvolvido em Python para simular técnicas de ataque em ambientes controlados e gerar eventos utilizados na validação de mecanismos de detecção.**
+
+**Tecnologias:**
+
+`Python` `Security Testing` `Web Security` `Nmap` `Burp Suite` `Metasploit` `CVSS` `CWE`
+
+### Objetivos
+
+* Simular técnicas de reconhecimento.
+* Executar cenários de scanning.
+* Simular técnicas de exploração em ambiente controlado.
+* Gerar eventos para investigação no SOC Lab.
+* Validar e ajustar mecanismos de detecção.
+* Classificar achados utilizando **CVSS e CWE**.
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)**
+
+---
+
+## ☁️ AWS Security Lab — EC2, S3 & VPC
+
+**Projeto prático de infraestrutura Cloud com foco em fundamentos de segurança e configuração de recursos AWS.**
+
+**Tecnologias:**
+
+`AWS` `EC2` `S3` `VPC` `Security Groups` `EBS` `User Data` `Git`
+
+### Conceitos praticados
+
+* Provisionamento de instâncias EC2.
+* Configuração de VPC.
+* Controle de acesso através de Security Groups.
+* Armazenamento utilizando S3.
+* Utilização de volumes EBS.
+* Automação inicial utilizando User Data.
+* Documentação da infraestrutura.
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/projeto-aws-s3-ec2)**
+
+---
+
+# 🔎 Áreas de Interesse
+
+```text
+SOC N1
+Blue Team
+Security Operations
+SIEM
+Threat Detection
+Security Monitoring
+Log Analysis
+Incident Investigation
+Incident Response
+MITRE ATT&CK
+Network Security
+Cloud Security
+Detection Engineering
+Security Automation
+```
+
+---
+
+# 🧰 Ferramentas
+
+| Área                  | Tecnologias                                  |
+| --------------------- | -------------------------------------------- |
+| **SIEM / SOC**        | Wazuh                                        |
+| **Blue Team**         | Log Analysis, Threat Detection, MITRE ATT&CK |
+| **Security Testing**  | Burp Suite, Nmap, Metasploit, OWASP          |
+| **Networks**          | TCP/IP, Wireshark, Nmap                      |
+| **Operating Systems** | Linux, Kali Linux                            |
+| **Programming**       | Python, Bash                                 |
+| **Cloud**             | AWS, EC2, S3, VPC, Security Groups           |
+| **Infrastructure**    | Docker, VirtualBox                           |
+| **Version Control**   | Git, GitHub                                  |
+
+---
+
+# 🎓 Formação & Certificações
+
+🎓 **Graduação em Cibersegurança**
+UniCesumar — Em andamento
+
+📜 **Google Cybersecurity Professional Certificate**
+
+📜 **Cisco — Junior Cybersecurity Analyst**
+
+📜 **AWS Cloud Practitioner Essentials**
+
+📜 **FIAP — Nano Course Cybersecurity**
+
+📜 **Be Safe.inc — SOC N1**
+
+---
+
+# 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Pendragon711&theme=dark&hide_border=true" />
-  <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Pendragon711&theme=dark" />
+
+<img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Pendragon711&theme=dark&hide_border=true"/>
+
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Pendragon711&theme=dark"/>
+
 </div>
 
 ---
 
-### 📬 Vamos nos conectar?
+# 📫 Conecte-se comigo
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/danielwidal">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+
+<a href="mailto:daniels2live666@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+
+</div>
+
+---
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/danielwidal" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:daniels2live666@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
+  🛡️ <strong>Building practical cybersecurity skills through labs, detection engineering and security automation.</strong>
 </p>
-
