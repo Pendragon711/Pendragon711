@@ -166,34 +166,75 @@ Network Security
 Cloud Security
 Detection Engineering
 Security Automation
+```
 
-🧰 Ferramentas
-Área	Tecnologias
-SIEM / SOC	Wazuh
-Blue Team	Log Analysis, Threat Detection, MITRE ATT&CK
-Security Testing	Burp Suite, Nmap, Metasploit, OWASP
-Networks	TCP/IP, Wireshark, Nmap
-Operating Systems	Linux, Kali Linux
-Programming	Python, Bash
-Cloud	AWS, EC2, S3, VPC, Security Groups
-Infrastructure	Docker, VirtualBox
-Version Control	Git, GitHub
-🎓 Formação & Certificações
-🎓 Graduação em Cibersegurança
+---
+
+# 🧰 Ferramentas
+
+| Área                  | Tecnologias                                  |
+| --------------------- | -------------------------------------------- |
+| **SIEM / SOC**        | Wazuh                                        |
+| **Blue Team**         | Log Analysis, Threat Detection, MITRE ATT&CK |
+| **Security Testing**  | Burp Suite, Nmap, Metasploit, OWASP          |
+| **Networks**          | TCP/IP, Wireshark, Nmap                      |
+| **Operating Systems** | Linux, Kali Linux                            |
+| **Programming**       | Python, Bash                                 |
+| **Cloud**             | AWS, EC2, S3, VPC, Security Groups           |
+| **Infrastructure**    | Docker, VirtualBox                           |
+| **Version Control**   | Git, GitHub                                  |
+
+---
+
+# 🎓 Formação & Certificações
+
+🎓 **Graduação em Cibersegurança**
 UniCesumar — Em andamento
 
-📜 Google Cybersecurity Professional Certificate
+📜 **Google Cybersecurity Professional Certificate**
 
-📜 Cisco — Junior Cybersecurity Analyst
+📜 **Cisco — Junior Cybersecurity Analyst**
 
-📜 AWS Cloud Practitioner Essentials
+📜 **AWS Cloud Practitioner Essentials**
 
-📜 FIAP — Nano Course Cybersecurity
+📜 **FIAP — Nano Course Cybersecurity**
 
-📜 Be Safe.inc — SOC N1
+📜 **Be Safe.inc — SOC N1**
 
-📊 GitHub Stats
-<div align="center"><img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Pendragon711&theme=dark&hide_border=true"/><img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Pendragon711&theme=dark"/></div>
-📫 Conecte-se comigo
-<div align="center"><a href="https://pendragon711.github.io"> <img src="https://img.shields.io/badge/Portfólio-00ff88?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Portfólio"/> </a><a href="https://www.linkedin.com/in/danielwidal"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/> </a><a href="mailto:daniels2live666@gmail.com"> <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/> </a></div>
-<p align="center"> 🛡️ <strong>Building practical cybersecurity skills through labs, detection engineering and security automation.</strong> </p> ```
+---
+
+# 📊 GitHub Stats
+
+<div align="center">
+
+<img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Pendragon711&theme=dark&hide_border=true"/>
+
+<img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Pendragon711&theme=dark"/>
+
+</div>
+
+---
+
+# 📫 Conecte-se comigo
+
+<div align="center">
+
+<a href="https://pendragon711.github.io">
+  <img src="https://img.shields.io/badge/Portfólio-00ff88?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Portfólio"/>
+</a>
+
+<a href="https://www.linkedin.com/in/danielwidal">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+
+<a href="mailto:daniels2live666@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+
+</div>
+
+---
+
+<p align="center">
+  🛡️ <strong>Building practical cybersecurity skills through labs, detection engineering and security automation.</strong>
+</p>
