@@ -83,6 +83,36 @@ Uso essas ferramentas principalmente em **ambientes controlados**, simulando té
 
 # 🚨 Cybersecurity Projects
 
+## 🍯 SSH Honeypot Lab — Detection Engine & Live Dashboard
+
+**Laboratório de honeypot SSH + Web com motor de detecção próprio, deduplicação por baseline e dashboard em tempo real.**
+
+**Tecnologias:**
+
+`Python` `Flask` `Socket` `HTTP Server` `JSONL` `VirtualBox` `Linux` `Blue Team` `Detection Engineering`
+
+### O que foi realizado
+
+* Construção de honeypot SSH (disfarce OpenSSH) e honeypot Web (disfarce Apache) do zero, sem dependências externas.
+* Motor de detecção próprio com **4 regras independentes** baseadas em janelas deslizantes.
+* **Deduplicação por baseline** inspirada em SIEMs comerciais, para evitar *alert fatigue*.
+* Eventos persistidos em **JSONL estruturado** (fácil ingestão em Wazuh, ELK, Splunk).
+* **Dashboard Flask** que atualiza a cada 2 segundos via API JSON.
+* Simulador de ataques controlado (SSH burst, payload, HTTP suspicious paths).
+* Laboratório isolado em rede **host-only** (VM Ubuntu + atacante Windows).
+
+### Regras de detecção implementadas
+
+| Regra | Severidade | Gatilho |
+| --- | --- | --- |
+| `connection_burst` | MEDIUM | 5+ conexões do mesmo IP em 60s |
+| `repeated_ssh_banner` | LOW | 3+ banners SSH do mesmo IP em 60s |
+| `suspicious_payload` | HIGH | Payload com `password`, `wget`, `curl`, `bash`, `nc`, etc. |
+| `http_suspicious_path` | MEDIUM | Requisição HTTP para paths sensíveis (`/admin`, `/.env`, `/wp-admin`, `/.git/config`, ...) |
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/ssh-honeypot-lab)**
+
+
 ## 🛡️ SOC Lab — Wazuh SIEM
 
 **Laboratório de SOC / Blue Team para monitoramento, detecção e investigação de eventos de segurança.**
