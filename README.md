@@ -8,13 +8,15 @@
   </a>
 </p>
 
-Profissional de **Cibersegurança** com foco em **SOC N1, Blue Team, SIEM, análise de logs, detecção de ameaças e investigação de incidentes**.
+Profissional de **Cibersegurança** com foco em **SOC N1, Blue Team, SIEM, Security Monitoring, análise de logs, detecção de ameaças e investigação de incidentes**.
 
-Desenvolvo laboratórios e ferramentas práticas para simular ataques, gerar eventos de segurança, investigar evidências e validar mecanismos de detecção.
+Possuo experiência prática em atividades de **SOC**, incluindo monitoramento e triagem de eventos de segurança, análise preliminar de alertas, classificação e escalonamento de incidentes, investigação inicial de eventos relacionados a redes, endpoints e acessos, além de apoio à documentação de procedimentos e playbooks.
 
-Meu portfólio combina **Wazuh, Linux, Python, Bash, MITRE ATT&CK, redes, segurança em Cloud e ferramentas de segurança ofensiva utilizadas em ambientes controlados**.
+Também desenvolvo laboratórios e ferramentas próprias para simular ataques em ambientes controlados, gerar eventos de segurança e validar mecanismos de detecção.
 
-> 🎯 **Objetivo:** atuar como **SOC Analyst N1 / Analista de Cibersegurança Jr.**, contribuindo com monitoramento, análise de alertas, investigação e resposta a incidentes.
+Minha stack combina **Wazuh, Linux, Python, Bash, MITRE ATT&CK, redes, AWS e ferramentas de segurança ofensiva utilizadas em ambientes controlados**.
+
+> 🎯 **Objetivo:** atuar como **SOC Analyst N1 / Analista de Cibersegurança Jr.**, contribuindo com monitoramento, análise de alertas, detecção de ameaças, investigação e resposta a incidentes.
 
 ---
 
@@ -22,11 +24,11 @@ Meu portfólio combina **Wazuh, Linux, Python, Bash, MITRE ATT&CK, redes, segura
 
 > 🔗 **[pendragon711.github.io](https://pendragon711.github.io)**
 >
-> Site pessoal com visual SOC/terminal, labs documentados e stack técnica detalhada.
+> Site pessoal com labs de cybersecurity, estudos de caso e documentação técnica.
 
 ---
 
-## 🛡️ Cybersecurity Stack
+# 🛡️ Cybersecurity Stack
 
 ### 🔵 Blue Team / SOC
 
@@ -39,7 +41,7 @@ Meu portfólio combina **Wazuh, Linux, Python, Bash, MITRE ATT&CK, redes, segura
   <img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
 </p>
 
-**Foco:** Security Monitoring • Log Analysis • Threat Detection • Alert Investigation • Event Correlation • Incident Analysis • Detection Engineering
+**Foco:** Security Monitoring • Log Analysis • Threat Detection • Alert Investigation • Event Correlation • Incident Analysis • Detection Engineering • Incident Response
 
 ---
 
@@ -51,7 +53,7 @@ Meu portfólio combina **Wazuh, Linux, Python, Bash, MITRE ATT&CK, redes, segura
   <img src="https://img.shields.io/badge/TCP%2FIP-005571?style=for-the-badge" alt="TCP/IP" />
 </p>
 
-**Foco:** TCP/IP • Network Analysis • Traffic Analysis • Network Troubleshooting • Security Monitoring
+**Foco:** TCP/IP • Network Analysis • Traffic Analysis • Network Troubleshooting • Network Security
 
 ---
 
@@ -64,7 +66,7 @@ Meu portfólio combina **Wazuh, Linux, Python, Bash, MITRE ATT&CK, redes, segura
   <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
 </p>
 
-Uso essas ferramentas principalmente em **ambientes controlados**, simulando técnicas de ataque para gerar eventos e validar mecanismos de detecção.
+Uso essas ferramentas em **ambientes controlados**, principalmente para simular técnicas de ataque, gerar eventos e validar mecanismos de detecção.
 
 ---
 
@@ -93,25 +95,26 @@ Uso essas ferramentas principalmente em **ambientes controlados**, simulando té
 
 ### O que foi realizado
 
-* Construção de honeypot SSH (disfarce OpenSSH) e honeypot Web (disfarce Apache) do zero, sem dependências externas.
+* Construção de honeypot SSH e Web do zero, sem dependências externas.
 * Motor de detecção próprio com **4 regras independentes** baseadas em janelas deslizantes.
-* **Deduplicação por baseline** inspirada em SIEMs comerciais, para evitar *alert fatigue*.
-* Eventos persistidos em **JSONL estruturado** (fácil ingestão em Wazuh, ELK, Splunk).
-* **Dashboard Flask** que atualiza a cada 2 segundos via API JSON.
-* Simulador de ataques controlado (SSH burst, payload, HTTP suspicious paths).
-* Laboratório isolado em rede **host-only** (VM Ubuntu + atacante Windows).
+* **Deduplicação por baseline** para reduzir alert fatigue.
+* Persistência de eventos em **JSONL estruturado**.
+* Dashboard Flask atualizado em tempo real via API JSON.
+* Simulador de ataques controlado para geração de eventos.
+* Laboratório isolado em rede **host-only**.
 
-### Regras de detecção implementadas
+### Regras de detecção
 
-| Regra | Severidade | Gatilho |
-| --- | --- | --- |
-| `connection_burst` | MEDIUM | 5+ conexões do mesmo IP em 60s |
-| `repeated_ssh_banner` | LOW | 3+ banners SSH do mesmo IP em 60s |
-| `suspicious_payload` | HIGH | Payload com `password`, `wget`, `curl`, `bash`, `nc`, etc. |
-| `http_suspicious_path` | MEDIUM | Requisição HTTP para paths sensíveis (`/admin`, `/.env`, `/wp-admin`, `/.git/config`, ...) |
+| Regra                  | Severidade | Gatilho                            |
+| ---------------------- | ---------- | ---------------------------------- |
+| `connection_burst`     | MEDIUM     | 5+ conexões do mesmo IP em 60s     |
+| `repeated_ssh_banner`  | LOW        | 3+ banners SSH do mesmo IP em 60s  |
+| `suspicious_payload`   | HIGH       | Payload contendo padrões suspeitos |
+| `http_suspicious_path` | MEDIUM     | Requisições para paths sensíveis   |
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/ssh-honeypot-lab)**
 
+---
 
 ## 🛡️ SOC Lab — Wazuh SIEM
 
@@ -186,9 +189,10 @@ SOC N1
 Blue Team
 Security Operations
 SIEM
-Threat Detection
 Security Monitoring
+Threat Detection
 Log Analysis
+Alert Investigation
 Incident Investigation
 Incident Response
 MITRE ATT&CK
@@ -266,5 +270,5 @@ UniCesumar — Em andamento
 ---
 
 <p align="center">
-  🛡️ <strong>Building practical cybersecurity skills through labs, detection engineering and security automation.</strong>
+  🛡️ <strong>Building practical cybersecurity skills through SOC operations, detection engineering and security automation.</strong>
 </p>
