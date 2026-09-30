@@ -1,6 +1,6 @@
 # 🛡️ Daniel Widal — Cybersecurity
 
-### SOC N1 | Blue Team | SIEM | Threat Detection | Incident Response
+### Pentest Jr. | Offensive Security | Web Security | AppSec | Bug Bounty
 
 <p align="left">
   <a href="https://pendragon711.github.io">
@@ -8,100 +8,105 @@
   </a>
 </p>
 
-Profissional de **Cibersegurança** com foco em **SOC N1, Blue Team, SIEM, Security Monitoring, análise de logs, detecção de ameaças e investigação de incidentes**.
+Profissional de **Cibersegurança** direcionando a carreira para **Offensive Security, Pentest e Web Application Security**, com experiência profissional em SOC, redes e troubleshooting.
 
-Possuo experiência prática em atividades de **SOC**, incluindo monitoramento e triagem de eventos de segurança, análise preliminar de alertas, classificação e escalonamento de incidentes, investigação inicial de eventos relacionados a redes, endpoints e acessos, além de apoio à documentação de procedimentos e playbooks.
+Tenho prática em **reconhecimento, enumeração, análise de superfície de ataque e segurança de aplicações web**, utilizando ferramentas como **Burp Suite, Nmap, Python, Playwright, Kali Linux e Metasploit** em ambientes autorizados e controlados.
 
-Também desenvolvo laboratórios e ferramentas próprias para simular ataques em ambientes controlados, gerar eventos de segurança e validar mecanismos de detecção.
+Também atuo com **Bug Bounty no HackerOne**, realizando pesquisa e investigação de vulnerabilidades em programas autorizados, utilizando referências como **OWASP Top 10, CWE e CVSS**.
 
-Minha stack combina **Wazuh, Linux, Python, Bash, MITRE ATT&CK, redes, AWS e ferramentas de segurança ofensiva utilizadas em ambientes controlados**.
+Meu background em **SOC e Blue Team** complementa a atuação ofensiva, permitindo analisar também os eventos e evidências gerados durante atividades de segurança.
 
-> 🎯 **Objetivo:** atuar como **SOC Analyst N1 / Analista de Cibersegurança Jr.**, contribuindo com monitoramento, análise de alertas, detecção de ameaças, investigação e resposta a incidentes.
-
----
-
-## 🌐 Portfólio
-
-> 🔗 **[pendragon711.github.io](https://pendragon711.github.io)**
->
-> Site pessoal com labs de cybersecurity, estudos de caso e documentação técnica.
+🎓 **Cibersegurança — UniCesumar | Em andamento**
 
 ---
 
-# 🛡️ Cybersecurity Stack
+# ⚔️ Offensive Security / Pentest
 
-### 🔵 Blue Team / SOC
+Projetos e estudos voltados para **Web Security, Pentest, Reconnaissance, Vulnerability Research e Security Testing**.
 
-<p align="left">
-  <img src="https://img.shields.io/badge/Wazuh-3C8CBE?style=for-the-badge&logo=wazuh&logoColor=white" alt="Wazuh" />
-  <img src="https://img.shields.io/badge/SIEM-4B0082?style=for-the-badge" alt="SIEM" />
-  <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-000000?style=for-the-badge&logo=mitre&logoColor=white" alt="MITRE ATT&CK" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
-</p>
+## 👻 GHOST — Web Pentest Framework
 
-**Foco:** Security Monitoring • Log Analysis • Threat Detection • Alert Investigation • Event Correlation • Incident Analysis • Detection Engineering • Incident Response
-
----
-
-### 🌐 Network Security
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Nmap-4682B4?style=for-the-badge" alt="Nmap" />
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/TCP%2FIP-005571?style=for-the-badge" alt="TCP/IP" />
-</p>
-
-**Foco:** TCP/IP • Network Analysis • Traffic Analysis • Network Troubleshooting • Network Security
-
----
-
-### 🔴 Security Testing
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Burp%20Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
-  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge" alt="Metasploit" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali Linux" />
-  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
-</p>
-
-Uso essas ferramentas em **ambientes controlados**, principalmente para simular técnicas de ataque, gerar eventos e validar mecanismos de detecção.
-
----
-
-### ☁️ Cloud & Infrastructure
-
-<p align="left">
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-</p>
-
-**AWS:** EC2 • S3 • VPC • Security Groups • EBS
-
----
-
-# 🚨 Cybersecurity Projects
-
-## 🍯 SSH Honeypot Lab — Detection Engine & Live Dashboard
-
-**Laboratório de honeypot SSH + Web com motor de detecção próprio, deduplicação por baseline e dashboard em tempo real.**
+**Framework em Python para automação e simulação de testes de segurança em aplicações web em ambiente controlado.**
 
 **Tecnologias:**
 
-`Python` `Flask` `Socket` `HTTP Server` `JSONL` `VirtualBox` `Linux` `Blue Team` `Detection Engineering`
+`Python` `Playwright` `Requests` `Web Security` `CWE` `CVSS`
 
-### O que foi realizado
+### O que foi desenvolvido
 
-* Construção de honeypot SSH e Web do zero, sem dependências externas.
-* Motor de detecção próprio com **4 regras independentes** baseadas em janelas deslizantes.
-* **Deduplicação por baseline** para reduzir alert fatigue.
-* Persistência de eventos em **JSONL estruturado**.
-* Dashboard Flask atualizado em tempo real via API JSON.
-* Simulador de ataques controlado para geração de eventos.
-* Laboratório isolado em rede **host-only**.
+* Crawler baseado em **Playwright** para mapeamento de aplicações web dinâmicas e SPAs.
+* Automação de requisições e cenários de teste.
+* Simulação controlada de vulnerabilidades como **XSS, SQL Injection, LFI/RFI, SSRF, SSTI, NoSQL Injection, Command Injection e IDOR**.
+* Motor de classificação de achados utilizando **CWE**.
+* Avaliação de severidade utilizando **CVSS v3.1**.
+* Geração e documentação de evidências técnicas.
+* Integração dos testes com laboratório de **Wazuh** para análise dos eventos gerados.
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)**
+
+---
+
+## 🔎 Bug Bounty & Vulnerability Research
+
+Prática contínua de **Bug Bounty no HackerOne**, com foco em aplicações web e pesquisa de vulnerabilidades em programas autorizados.
+
+### Prática
+
+* Reconhecimento e enumeração de superfície de ataque.
+* Identificação e análise de endpoints e funcionalidades.
+* Testes manuais de segurança em aplicações web.
+* Investigação de comportamentos anômalos.
+* Validação de hipóteses e evidências.
+* Classificação de vulnerabilidades utilizando **CWE**.
+* Análise de impacto e severidade utilizando **CVSS**.
+* Documentação técnica de achados.
+
+🔗 **[HackerOne →](https://hackerone.com/)**
+
+---
+
+## 🧪 Pentest & Exploitation Lab
+
+**Laboratório isolado para prática de reconhecimento, exploração e análise de vulnerabilidades.**
+
+**Tecnologias:**
+
+`Kali Linux` `Metasploit` `Metasploitable 2` `Nmap` `Burp Suite` `VirtualBox`
+
+### Prática
+
+* Reconhecimento e enumeração de serviços.
+* Scanning de portas e serviços.
+* Análise de aplicações e serviços vulneráveis.
+* Exploração controlada utilizando **Metasploit**.
+* Testes de segurança em aplicações web.
+* Análise dos eventos gerados durante os testes.
+* Documentação dos procedimentos e evidências.
+
+---
+
+# 🛡️ Blue Team / SOC
+
+Projetos voltados para **Security Monitoring, SIEM, Threat Detection, Detection Engineering e Incident Investigation**.
+
+## 🍯 SSH Honeypot Lab — Detection Engine & Live Dashboard
+
+**Honeypot SSH/Web desenvolvido em Python com motor de detecção próprio e dashboard em tempo real.**
+
+**Tecnologias:**
+
+`Python` `Flask` `Socket` `HTTP` `JSONL` `Linux` `VirtualBox`
+
+### O que foi desenvolvido
+
+* Honeypot SSH e Web construído do zero.
+* Motor de detecção baseado em **janelas deslizantes**.
+* Quatro regras independentes para identificação de comportamentos suspeitos.
+* Deduplicação baseada em baseline para redução de **alert fatigue**.
+* Persistência estruturada de eventos em **JSONL**.
+* Dashboard em Flask com atualização em tempo real através de API JSON.
+* Simulador de ataques para geração controlada de eventos.
+* Laboratório isolado em rede **Host-Only**.
 
 ### Regras de detecção
 
@@ -118,105 +123,119 @@ Uso essas ferramentas em **ambientes controlados**, principalmente para simular 
 
 ## 🛡️ SOC Lab — Wazuh SIEM
 
-**Laboratório de SOC / Blue Team para monitoramento, detecção e investigação de eventos de segurança.**
+**Laboratório de SOC para simulação de ataques, coleta de eventos, detecção e investigação de incidentes.**
 
 **Tecnologias:**
 
-`Wazuh` `SIEM` `Linux` `Kali Linux` `Metasploitable 2` `VirtualBox` `MITRE ATT&CK`
+`Wazuh` `SIEM` `Kali Linux` `Metasploitable 2` `VirtualBox` `MITRE ATT&CK`
 
-### O que foi realizado
+### O que foi desenvolvido
 
-* Construção de ambiente controlado para simulação de ataques.
+* Ambiente virtual isolado para simulação de ataques.
 * Coleta e análise de logs de segurança.
 * Criação e ajuste de regras de detecção.
 * Correlação de eventos.
 * Investigação de comportamentos suspeitos.
 * Mapeamento de eventos para **MITRE ATT&CK**.
 * Simulação de **brute force SSH**.
-* Detecção do cenário de brute force em aproximadamente **10 segundos** no laboratório.
+* Validação da detecção do cenário em aproximadamente **10 segundos** no laboratório.
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/soc-lab-wazuh)**
 
 ---
 
-## 👻 GHOST — Security Testing Framework
+# ☁️ Cloud & Infrastructure
 
-**Framework modular desenvolvido em Python para simular técnicas de ataque em ambientes controlados e gerar eventos utilizados na validação de mecanismos de detecção.**
+## AWS Security Lab — EC2, S3 & VPC
 
-**Tecnologias:**
-
-`Python` `Security Testing` `Web Security` `Nmap` `Burp Suite` `Metasploit` `CVSS` `CWE`
-
-### Objetivos
-
-* Simular técnicas de reconhecimento.
-* Executar cenários de scanning.
-* Simular técnicas de exploração em ambiente controlado.
-* Gerar eventos para investigação no SOC Lab.
-* Validar e ajustar mecanismos de detecção.
-* Classificar achados utilizando **CVSS e CWE**.
-
-🔗 **[Ver projeto →](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)**
-
----
-
-## ☁️ AWS Security Lab — EC2, S3 & VPC
-
-**Projeto prático de infraestrutura Cloud com foco em fundamentos de segurança e configuração de recursos AWS.**
+**Laboratório prático de infraestrutura AWS com foco em fundamentos de cloud e segurança.**
 
 **Tecnologias:**
 
-`AWS` `EC2` `S3` `VPC` `Security Groups` `EBS` `User Data` `Git`
+`AWS` `EC2` `S3` `VPC` `Security Groups` `EBS` `Git`
 
 ### Conceitos praticados
 
 * Provisionamento de instâncias EC2.
 * Configuração de VPC.
-* Controle de acesso através de Security Groups.
+* Controle de acesso com Security Groups.
 * Armazenamento utilizando S3.
-* Utilização de volumes EBS.
-* Automação inicial utilizando User Data.
+* Volumes EBS.
+* Automação inicial com User Data.
 * Documentação da infraestrutura.
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/projeto-aws-s3-ec2)**
 
 ---
 
-# 🔎 Áreas de Interesse
+# 🧰 Security Stack
 
-```text
-SOC N1
-Blue Team
-Security Operations
-SIEM
-Security Monitoring
-Threat Detection
-Log Analysis
-Alert Investigation
-Incident Investigation
-Incident Response
-MITRE ATT&CK
-Network Security
-Cloud Security
-Detection Engineering
-Security Automation
-```
+### 🔴 Offensive Security
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Burp%20Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
+  <img src="https://img.shields.io/badge/Nmap-4682B4?style=for-the-badge" alt="Nmap" />
+  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge" alt="Metasploit" />
+  <img src="https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali Linux" />
+  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
+</p>
+
+**Web Security:** OWASP Top 10 • XSS • SQL Injection • SSRF • IDOR • LFI/RFI • SSTI • NoSQL Injection • Command Injection
+
+**Standards:** CWE • CVSS v3.1
 
 ---
 
-# 🧰 Ferramentas
+### 🔵 Blue Team / SOC
 
-| Área                  | Tecnologias                                  |
-| --------------------- | -------------------------------------------- |
-| **SIEM / SOC**        | Wazuh                                        |
-| **Blue Team**         | Log Analysis, Threat Detection, MITRE ATT&CK |
-| **Security Testing**  | Burp Suite, Nmap, Metasploit, OWASP          |
-| **Networks**          | TCP/IP, Wireshark, Nmap                      |
-| **Operating Systems** | Linux, Kali Linux                            |
-| **Programming**       | Python, Bash                                 |
-| **Cloud**             | AWS, EC2, S3, VPC, Security Groups           |
-| **Infrastructure**    | Docker, VirtualBox                           |
-| **Version Control**   | Git, GitHub                                  |
+<p align="left">
+  <img src="https://img.shields.io/badge/Wazuh-3C8CBE?style=for-the-badge&logo=wazuh&logoColor=white" alt="Wazuh" />
+  <img src="https://img.shields.io/badge/SIEM-4B0082?style=for-the-badge" alt="SIEM" />
+  <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-000000?style=for-the-badge&logo=mitre&logoColor=white" alt="MITRE ATT&CK" />
+</p>
+
+**Foco:** Security Monitoring • Log Analysis • Threat Detection • Alert Investigation • Event Correlation • Detection Engineering • Incident Investigation
+
+---
+
+### 🌐 Networks & Systems
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/TCP%2FIP-005571?style=for-the-badge" alt="TCP/IP" />
+  <img src="https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white" alt="VirtualBox" />
+</p>
+
+**Foco:** TCP/IP • Network Analysis • Traffic Analysis • Network Troubleshooting • Linux • Virtualization
+
+---
+
+### 🐍 Development & Automation
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+</p>
+
+---
+
+# 🎯 Áreas de Interesse
+
+### 🔴 Offensive Security
+
+`Pentest` `Web Security` `AppSec` `Bug Bounty` `Vulnerability Research` `Reconnaissance` `Security Testing`
+
+### 🔵 Defensive Security
+
+`SOC` `SIEM` `Threat Detection` `Detection Engineering` `Log Analysis` `Incident Response` `MITRE ATT&CK`
+
+### ☁️ Infrastructure
+
+`Network Security` `Cloud Security` `Linux` `AWS` `Security Automation`
 
 ---
 
@@ -225,15 +244,17 @@ Security Automation
 🎓 **Graduação em Cibersegurança**
 UniCesumar — Em andamento
 
-📜 **Google Cybersecurity Professional Certificate**
+📜 **Analista de SOC na Era da IA** — IBSEC
 
-📜 **Cisco — Junior Cybersecurity Analyst**
+📜 **Google Cybersecurity Professional Certificate** — Coursera
 
-📜 **AWS Cloud Practitioner Essentials**
+📜 **Cisco Junior Cybersecurity Analyst** — Cisco Networking Academy
 
-📜 **FIAP — Nano Course Cybersecurity**
+📜 **Nano Course Cybersecurity** — FIAP
 
-📜 **Be Safe.inc — SOC N1**
+📜 **Fundamentos de SOC N1** — Be Safe Inc.
+
+📜 **AWS Cloud Practitioner Essentials** — Amazon Web Services
 
 ---
 
@@ -270,5 +291,5 @@ UniCesumar — Em andamento
 ---
 
 <p align="center">
-  🛡️ <strong>Building practical cybersecurity skills through SOC operations, detection engineering and security automation.</strong>
+  ⚔️ <strong>Building practical offensive security skills through Pentest, Web Security, Bug Bounty and security research.</strong>
 </p>
