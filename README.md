@@ -24,6 +24,26 @@ Meu background em **SOC e Blue Team** complementa a atuação ofensiva, permitin
 
 Projetos e estudos voltados para **Web Security, Pentest, Reconnaissance, Vulnerability Research e Security Testing**.
 
+## 👁️ ODIN — Advanced Web Reconnaissance Pipeline
+
+**Ferramenta de orquestração de reconhecimento web desenvolvida em Go, projetada para mapear superfícies de ataque de forma automatizada e inteligente.**
+
+**Tecnologias:**
+
+`Go (Golang)` `SQLite` `Linux` `Automation` `WAF Detection` `Subfinder` `Naabu` `HTTPX` `Katana`
+
+### O que foi desenvolvido
+
+*   **Pipeline Orquestrado:** Integra Subfinder, Naabu, HTTPX e Katana em um fluxo único de execução.
+*   **Detecção Inteligente de WAF:** Identifica firewalls (Cloudflare, AWS, Akamai) e páginas de bloqueio usando análise de assinaturas e clusterização por similaridade (SimHash).
+*   **Isolamento de Dados:** Cada alvo possui seu próprio banco de dados SQLite (`db/<alvo>_recon.db`), garantindo organização total.
+*   **Exportação Limpa:** Filtra automaticamente alvos protegidos por WAF, gerando listas prontas para ferramentas de exploração (Nuclei, FFUF, Hydra).
+*   **Interface Minimalista:** Banner personalizado e help dinâmico focado na experiência do operador.
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/odin-recon)**
+
+---
+
 ## 👻 GHOST — Web Pentest Framework
 
 **Framework em Python para automação e simulação de testes de segurança em aplicações web em ambiente controlado.**
@@ -34,13 +54,13 @@ Projetos e estudos voltados para **Web Security, Pentest, Reconnaissance, Vulner
 
 ### O que foi desenvolvido
 
-* Crawler baseado em **Playwright** para mapeamento de aplicações web dinâmicas e SPAs.
-* Automação de requisições e cenários de teste.
-* Simulação controlada de vulnerabilidades como **XSS, SQL Injection, LFI/RFI, SSRF, SSTI, NoSQL Injection, Command Injection e IDOR**.
-* Motor de classificação de achados utilizando **CWE**.
-* Avaliação de severidade utilizando **CVSS v3.1**.
-* Geração e documentação de evidências técnicas.
-* Integração dos testes com laboratório de **Wazuh** para análise dos eventos gerados.
+*   Crawler baseado em **Playwright** para mapeamento de aplicações web dinâmicas e SPAs.
+*   Automação de requisições e cenários de teste.
+*   Simulação controlada de vulnerabilidades como **XSS, SQL Injection, LFI/RFI, SSRF, SSTI, NoSQL Injection, Command Injection e IDOR**.
+*   Motor de classificação de achados utilizando **CWE**.
+*   Avaliação de severidade utilizando **CVSS v3.1**.
+*   Geração e documentação de evidências técnicas.
+*   Integração dos testes com laboratório de **Wazuh** para análise dos eventos gerados.
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)**
 
@@ -52,14 +72,14 @@ Prática contínua de **Bug Bounty no HackerOne**, com foco em aplicações web 
 
 ### Prática
 
-* Reconhecimento e enumeração de superfície de ataque.
-* Identificação e análise de endpoints e funcionalidades.
-* Testes manuais de segurança em aplicações web.
-* Investigação de comportamentos anômalos.
-* Validação de hipóteses e evidências.
-* Classificação de vulnerabilidades utilizando **CWE**.
-* Análise de impacto e severidade utilizando **CVSS**.
-* Documentação técnica de achados.
+*   Reconhecimento e enumeração de superfície de ataque.
+*   Identificação e análise de endpoints e funcionalidades.
+*   Testes manuais de segurança em aplicações web.
+*   Investigação de comportamentos anômalos.
+*   Validação de hipóteses e evidências.
+*   Classificação de vulnerabilidades utilizando **CWE**.
+*   Análise de impacto e severidade utilizando **CVSS**.
+*   Documentação técnica de achados.
 
 🔗 **[HackerOne →](https://hackerone.com/)**
 
@@ -75,13 +95,13 @@ Prática contínua de **Bug Bounty no HackerOne**, com foco em aplicações web 
 
 ### Prática
 
-* Reconhecimento e enumeração de serviços.
-* Scanning de portas e serviços.
-* Análise de aplicações e serviços vulneráveis.
-* Exploração controlada utilizando **Metasploit**.
-* Testes de segurança em aplicações web.
-* Análise dos eventos gerados durante os testes.
-* Documentação dos procedimentos e evidências.
+*   Reconhecimento e enumeração de serviços.
+*   Scanning de portas e serviços.
+*   Análise de aplicações e serviços vulneráveis.
+*   Exploração controlada utilizando **Metasploit**.
+*   Testes de segurança em aplicações web.
+*   Análise dos eventos gerados durante os testes.
+*   Documentação dos procedimentos e evidências.
 
 ---
 
@@ -99,14 +119,14 @@ Projetos voltados para **Security Monitoring, SIEM, Threat Detection, Detection 
 
 ### O que foi desenvolvido
 
-* Honeypot SSH e Web construído do zero.
-* Motor de detecção baseado em **janelas deslizantes**.
-* Quatro regras independentes para identificação de comportamentos suspeitos.
-* Deduplicação baseada em baseline para redução de **alert fatigue**.
-* Persistência estruturada de eventos em **JSONL**.
-* Dashboard em Flask com atualização em tempo real através de API JSON.
-* Simulador de ataques para geração controlada de eventos.
-* Laboratório isolado em rede **Host-Only**.
+*   Honeypot SSH e Web construído do zero.
+*   Motor de detecção baseado em **janelas deslizantes**.
+*   Quatro regras independentes para identificação de comportamentos suspeitos.
+*   Deduplicação baseada em baseline para redução de **alert fatigue**.
+*   Persistência estruturada de eventos em **JSONL**.
+*   Dashboard em Flask com atualização em tempo real através de API JSON.
+*   Simulador de ataques para geração controlada de eventos.
+*   Laboratório isolado em rede **Host-Only**.
 
 ### Regras de detecção
 
@@ -131,14 +151,14 @@ Projetos voltados para **Security Monitoring, SIEM, Threat Detection, Detection 
 
 ### O que foi desenvolvido
 
-* Ambiente virtual isolado para simulação de ataques.
-* Coleta e análise de logs de segurança.
-* Criação e ajuste de regras de detecção.
-* Correlação de eventos.
-* Investigação de comportamentos suspeitos.
-* Mapeamento de eventos para **MITRE ATT&CK**.
-* Simulação de **brute force SSH**.
-* Validação da detecção do cenário em aproximadamente **10 segundos** no laboratório.
+*   Ambiente virtual isolado para simulação de ataques.
+*   Coleta e análise de logs de segurança.
+*   Criação e ajuste de regras de detecção.
+*   Correlação de eventos.
+*   Investigação de comportamentos suspeitos.
+*   Mapeamento de eventos para **MITRE ATT&CK**.
+*   Simulação de **brute force SSH**.
+*   Validação da detecção do cenário em aproximadamente **10 segundos** no laboratório.
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/soc-lab-wazuh)**
 
@@ -156,13 +176,13 @@ Projetos voltados para **Security Monitoring, SIEM, Threat Detection, Detection 
 
 ### Conceitos praticados
 
-* Provisionamento de instâncias EC2.
-* Configuração de VPC.
-* Controle de acesso com Security Groups.
-* Armazenamento utilizando S3.
-* Volumes EBS.
-* Automação inicial com User Data.
-* Documentação da infraestrutura.
+*   Provisionamento de instâncias EC2.
+*   Configuração de VPC.
+*   Controle de acesso com Security Groups.
+*   Armazenamento utilizando S3.
+*   Volumes EBS.
+*   Automação inicial com User Data.
+*   Documentação da infraestrutura.
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/projeto-aws-s3-ec2)**
 
@@ -178,6 +198,7 @@ Projetos voltados para **Security Monitoring, SIEM, Threat Detection, Detection 
   <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge" alt="Metasploit" />
   <img src="https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali Linux" />
   <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
 </p>
 
 **Web Security:** OWASP Top 10 • XSS • SQL Injection • SSRF • IDOR • LFI/RFI • SSTI • NoSQL Injection • Command Injection
