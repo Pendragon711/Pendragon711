@@ -10,7 +10,7 @@
 
 Profissional de **Cibersegurança** direcionando a carreira para **SOC (Security Operations Center), DFIR e Resposta a Incidentes**, com experiência em triagem de alertas em SIEM e uma base de suporte técnico em redes.
 
-No estágio de Segurança da Informação na **Multi Energisa**, fiz a **triagem e a investigação de alertas em SIEM** (malware, phishing e acessos suspeitos), a **análise de logs e evidências**, o apoio a firewalls e ferramentas de detecção e a criação de **playbooks de resposta a incidentes**, relatórios e dashboards.
+Experiencia pratica em estágio de Segurança da Informação, fiz a **triagem e a investigação de alertas em SIEM** (malware, phishing e acessos suspeitos), a **análise de logs e evidências**, o apoio a firewalls e ferramentas de detecção e a criação de **playbooks de resposta a incidentes**, relatórios e dashboards.
 
 Fora do trabalho, mantenho laboratórios próprios de detecção com **Wazuh** e um **honeypot** com motor de detecção em Python. Minha base em **pentest** me ajuda a pensar como o atacante e a escrever detecções melhores.
 
@@ -232,13 +232,6 @@ Conhecer o ataque ajuda a escrever detecções melhores e a entender o rastro qu
 
 `SOC` `SIEM` `Threat Detection` `Detection Engineering` `Log Analysis` `Incident Response` `DFIR` `MITRE ATT&CK`
 
-### 🔴 Offensive Security
-
-`Pentest` `Web Security` `Bug Bounty` `Reconnaissance`
-
-### ☁️ Infrastructure
-
-`Network Security` `Cloud Security` `Linux` `AWS` `Security Automation`
 
 ---
 
