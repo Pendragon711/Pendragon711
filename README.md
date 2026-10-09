@@ -177,7 +177,6 @@ Conhecer o ataque ajuda a escrever detecções melhores e a entender o rastro qu
 
 *   👁️ **[ODIN](https://github.com/Pendragon711/odin-recon)** — Pipeline de reconhecimento web em Go (Subfinder, Naabu, HTTPX e Katana), com detecção de WAF e um banco SQLite por alvo.
 *   👻 **[GHOST](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)** — Framework de pentest web em Python e Playwright, com classificação **CWE**, severidade **CVSS v3.1** e integração com o laboratório Wazuh.
-*   🔎 **[Bug Bounty](https://hackerone.com/)** — Pesquisa de vulnerabilidades em programas autorizados no HackerOne.
 *   🧪 **Pentest & Exploitation Lab** — Kali Linux, Metasploit, Metasploitable 2, Nmap e Burp Suite em ambiente isolado.
 
 ---
