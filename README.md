@@ -10,9 +10,9 @@
 
 Profissional de **Cibersegurança** direcionando a carreira para **SOC (Security Operations Center), DFIR e Resposta a Incidentes**, com experiência em triagem de alertas em SIEM e uma base de suporte técnico em redes.
 
-Experiencia pratica em estágio de Segurança da Informação, fiz a **triagem e a investigação de alertas em SIEM** (malware, phishing e acessos suspeitos), a **análise de logs e evidências**, o apoio a firewalls e ferramentas de detecção e a criação de **playbooks de resposta a incidentes**, relatórios e dashboards.
+Com experiência prática em estágio de Segurança da Informação, fiz a **triagem e a investigação de alertas em SIEM** (malware, phishing e acessos suspeitos), a **análise de logs e evidências**, o apoio a firewalls e ferramentas de detecção e a criação de **playbooks de resposta a incidentes**, relatórios e dashboards.
 
-Fora do trabalho, mantenho laboratórios próprios de detecção com **Wazuh** e um **honeypot** com motor de detecção em Python. Minha base em **pentest** me ajuda a pensar como o atacante e a escrever detecções melhores.
+Fora do trabalho, mantenho laboratórios próprios de detecção com **Wazuh** e um **honeypot** com motor de detecção em Python, e documento investigações de **DFIR** (forense de rede e análise de malware). Minha base em **pentest** me ajuda a pensar como o atacante e a escrever detecções melhores.
 
 🎓 **Cibersegurança — UniCesumar | Em andamento**
 
@@ -138,11 +138,35 @@ Projetos voltados para **Security Monitoring, SIEM, Threat Detection, Detection 
 
 ---
 
-# 🔬 DFIR — em aprofundamento
+# 🔬 DFIR — Forense Digital & Análise de Malware
 
-Estou estudando a parte forense: preservar evidências com cuidado, correlacionar logs de várias fontes e reconstruir a linha do tempo de um incidente.
+Projetos de investigação focados em **preservar evidências, correlacionar fontes e reconstruir a linha do tempo de um incidente**.
 
-*   **Em prática:** análise de logs, correlação de eventos no Wazuh e documentação de evidências.
+## 🔎 DFIR Investigation: XLMRat — Network Forensics & Malware Triage
+
+**Investigação completa de uma cadeia de entrega e execução de malware (lab XLMRat, CyberDefenders), feita a partir de um arquivo PCAP.**
+
+**Tecnologias:**
+
+`Wireshark` `CyberChef` `VirusTotal` `Python` `MITRE ATT&CK`
+
+### O que foi desenvolvido
+
+*   Análise do tráfego HTTP e identificação do download do primeiro estágio (um `.jpg` que não era imagem).
+*   Desofuscação do payload e cálculo do hash **SHA256**.
+*   Identificação da família do malware (**AsyncRAT**) e do timestamp de compilação do PE.
+*   Investigação do abuso do LOLBin **RegSvcs.exe** para execução furtiva.
+*   Extração de **IOCs** (defanged) e dos arquivos criados pelo script malicioso.
+*   Mapeamento das técnicas no **MITRE ATT&CK** (T1105, T1059.001, T1218.009, T1620).
+*   Relatório técnico com evidências e lições defensivas, em português e inglês.
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/xlmrat-dfir-investigation)**
+
+---
+
+### Em aprofundamento
+
+*   **Em prática:** análise de PCAP, triagem de malware, análise de logs, correlação de eventos no Wazuh e documentação de evidências.
 *   **Em estudo:** `Sysmon` `Autopsy` `Volatility` `MITRE ATT&CK`
 
 ---
@@ -183,6 +207,18 @@ Conhecer o ataque ajuda a escrever detecções melhores e a entender o rastro qu
 </p>
 
 **Foco:** Security Monitoring • Alert Triage • Log Analysis • Threat Detection • Event Correlation • Detection Engineering • Incident Investigation • Playbooks de resposta
+
+---
+
+### 🔬 DFIR & Malware Analysis
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/CyberChef-C8391B?style=for-the-badge" alt="CyberChef" />
+  <img src="https://img.shields.io/badge/VirusTotal-394EFF?style=for-the-badge&logo=virustotal&logoColor=white" alt="VirusTotal" />
+</p>
+
+**Foco:** Network Forensics • PCAP Analysis • Malware Triage • Payload Deobfuscation • IOC Extraction • Hash-based Investigation • Evidence Documentation
 
 ---
 
@@ -230,7 +266,7 @@ Conhecer o ataque ajuda a escrever detecções melhores e a entender o rastro qu
 
 ### 🔵 Defensive Security
 
-`SOC` `SIEM` `Threat Detection` `Detection Engineering` `Log Analysis` `Incident Response` `DFIR` `MITRE ATT&CK`
+`SOC` `SIEM` `Threat Detection` `Detection Engineering` `Log Analysis` `Incident Response` `DFIR` `Malware Analysis` `Network Forensics` `MITRE ATT&CK`
 
 
 ---
