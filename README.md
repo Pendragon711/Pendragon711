@@ -1,6 +1,6 @@
-# 🛡️ Daniel Widal — SOC & DFIR
+# 🛡️ Daniel Widal — DFIR & Incident Response
 
-### Analista de SOC N1 | DFIR | Resposta a Incidentes | Detection Engineering
+### Analista de Segurança | Digital Forensics | Resposta a Incidentes | Detection Engineering
 
 <p align="left">
   <a href="https://pendragon711.github.io">
@@ -8,283 +8,204 @@
   </a>
 </p>
 
-Profissional de **Cibersegurança** direcionando a carreira para **SOC (Security Operations Center), DFIR e Resposta a Incidentes**, com experiência em triagem de alertas em SIEM e uma base de suporte técnico em redes.
+Profissional de **Cibersegurança** focado em **Digital Forensics, Incident Response (DFIR)** e **Detection Engineering**, com experiência sólida na investigação e contenção de ameaças, além de base estruturada em infraestrutura e redes.
 
-Com experiência prática em estágio de Segurança da Informação, fiz a **triagem e a investigação de alertas em SIEM** (malware, phishing e acessos suspeitos), a **análise de logs e evidências**, o apoio a firewalls e ferramentas de detecção e a criação de **playbooks de resposta a incidentes**, relatórios e dashboards.
+Com experiência prática no ecossistema de Segurança da Informação, atuo na **investigação profunda de incidentes** (malware, phishing avançado e movimentação lateral), **forense de rede (PCAP)**, **análise de artefatos maliciosos** e criação de **playbooks de resposta**. 
 
-Fora do trabalho, mantenho laboratórios próprios de detecção com **Wazuh** e um **honeypot** com motor de detecção em Python, e documento investigações de **DFIR** (forense de rede e análise de malware). Minha base em **pentest** me ajuda a pensar como o atacante e a escrever detecções melhores.
+Fora do trabalho, construo e mantenho laboratórios avançados: desenvolvi um **honeypot** com motor próprio de detecção em Python, gerencio um ambiente **SIEM (Wazuh)** para threat hunting e documento minuciosamente write-ups de **Network Forensics e Malware Analysis**. Minha base em **pentest** e visão ofensiva me permite mapear o comportamento do adversário (Kill Chain/MITRE ATT&CK) para desenvolver detecções mais resilientes.
 
 🎓 **Cibersegurança — UniCesumar | Em andamento**
 
 ---
 
-# 🔎 Como eu trabalho
+# 🔎 Metodologia de Investigação
 
-Do alerta à decisão, com tudo documentado.
+Do alerta à contenção, guiado por evidências e rastreabilidade.
 
 | Etapa | O que eu faço |
 | ----- | ------------- |
-| **Identificar** | Entender o que foi afetado e qual o escopo |
-| **Preservar** | Evitar a perda de evidências antes de qualquer limpeza |
-| **Coletar** | Capturar logs e arquivos registrando quem, quando e como |
-| **Analisar** | Correlacionar as fontes e montar a linha do tempo |
-| **Reportar** | Fatos, evidências e recomendações em linguagem clara |
+| **Identificar** | Dimensionar o escopo do comprometimento e os vetores de ataque. |
+| **Preservar** | Garantir a integridade das evidências (isolamento, memória, disco) antes de qualquer ação mitigatória. |
+| **Coletar** | Extrair artefatos do mais volátil ao menos volátil, registrando a cadeia de custódia. |
+| **Analisar** | Correlacionar logs, extrair payloads de PCAPs, realizar engenharia reversa básica e montar a linha do tempo (Timeline). |
+| **Reportar** | Documentar IOCs, táticas usadas (MITRE ATT&CK) e recomendações de remediação estruturada. |
 
-### Princípios de coleta de evidências
-
-*   Trabalhar sempre em cópia, nunca no original.
-*   Calcular o hash antes e depois da coleta.
-*   Coletar do mais volátil ao menos volátil.
-*   Registrar quem coletou, quando (UTC) e como.
+### Princípios Forenses Aplicados
+*   Trabalhar sempre em cópias forenses ou sandboxes, nunca no sistema original.
+*   Garantir a integridade através do cálculo de hashes (MD5/SHA-256) antes e depois da extração.
+*   Mapear comportamentos nativos (Living off the Land / LOLBins) para distinguir atividades legítimas de ofuscação.
 
 <details>
-<summary><strong>📋 Meus playbooks de triagem (clique para abrir)</strong></summary>
+<summary><strong>📋 Meus playbooks de Resposta a Incidentes (clique para abrir)</strong></summary>
 
 <br>
 
-**Phishing**
+**Infecção por Malware / Ransomware**
+1. Identificar o processo suspeito: arquivo, caminho de execução, hash e comportamento.
+2. Isolar a estação comprometida da rede (mantendo a máquina ligada para possível dump de memória).
+3. Reconstruir a árvore de processos (Event ID 4688) para achar o processo pai (ex: wscript.exe, powershell.exe).
+4. Verificar persistência (chaves de registro, tarefas agendadas) e conexões de C2 (Command & Control).
+5. Extrair e validar o hash em plataformas de Threat Intel (VirusTotal, ANY.RUN).
+6. Preservar evidências, realizar limpeza, documentar IOCs e implementar regras de bloqueio preventivo.
 
-1. Identificar o que chegou: remetente, assunto, anexos e links.
-2. Analisar os cabeçalhos: SPF, DKIM, DMARC e o caminho de entrega.
-3. Abrir links e anexos só em ambiente isolado.
-4. Medir o alcance: quem mais recebeu, abriu e clicou.
-5. Conter: bloquear remetente e URL, remover o e-mail e redefinir senhas de quem digitou credenciais.
-6. Registrar o caso com as evidências e os indicadores.
+**Comprometimento de Credenciais e Acesso Anômalo**
+1. Confirmar o evento: conta, horário (UTC), origem (IP/Geo) e método de autenticação.
+2. Comparar com o baseline do usuário (Impossible Travel, horários atípicos).
+3. Procurar varreduras de força bruta (Eventos 4625 repetidos seguidos por 4624 de sucesso).
+4. Se confirmado: encerrar sessões ativas imediatamente, invalidar tokens, forçar reset de credenciais e revisar logs do MFA.
+5. Iniciar varredura na rede buscando sinais de movimentação lateral iniciados por esta conta.
 
-*Escalo quando:* houve credenciais digitadas, anexo executado ou o alvo está na diretoria, financeiro ou TI.
-
-**Acesso suspeito**
-
-1. Confirmar o que disparou: conta, horário, origem e método de autenticação.
-2. Comparar com o histórico do usuário: local, dispositivo e horário habituais.
-3. Procurar falhas seguidas de sucesso (Windows: evento 4625 seguido de 4624).
-4. Validar com o usuário ou o gestor por um canal confiável.
-5. Se for suspeito: encerrar sessões, redefinir credenciais, revisar o MFA e as ações feitas na sessão.
-6. Registrar o caso com a linha do tempo dos acessos.
-
-*Escalo quando:* há login bem-sucedido que o usuário não reconhece, conta privilegiada ou sinal de movimentação lateral.
-
-**Malware**
-
-1. Ler o alerta: arquivo, caminho, hash e a ação tomada.
-2. Consultar hash e URL em bases de reputação.
-3. Reconstruir a árvore de processos (criação de processo, evento 4688).
-4. Verificar conexões de saída e persistência.
-5. Buscar o mesmo hash em outras estações.
-6. Se houve execução: isolar a estação e preservar as evidências antes de limpar.
-
-*Escalo quando:* a execução foi confirmada, há persistência ou comunicação com IP externo suspeito.
+**Phishing Direcionado (Spear-Phishing)**
+1. Analisar cabeçalhos de e-mail originais: falhas em SPF, DKIM, DMARC e roteamento de SMTP.
+2. Extrair anexos ou links em ambiente isolado (Sandbox) para análise dinâmica.
+3. Dimensionar o impacto: buscar nos logs do servidor de e-mail quem mais recebeu, abriu e clicou.
+4. Conter a ameaça: expurgar os e-mails das caixas de entrada e bloquear domínios/IPs nos firewalls e proxies.
+5. Auditar contas de usuários que interagiram com a carga maliciosa.
 
 </details>
 
 ---
 
-# 🛡️ SOC & Detection Engineering
-
-Projetos voltados para **Security Monitoring, SIEM, Threat Detection, Detection Engineering e Incident Investigation**.
-
-## 🛡️ SOC Lab — Wazuh SIEM
-
-**Laboratório de SOC para simulação de ataques, coleta de eventos, detecção e investigação de incidentes.**
-
-**Tecnologias:**
-
-`Wazuh` `SIEM` `Kali Linux` `Metasploitable 2` `VirtualBox` `MITRE ATT&CK`
-
-### O que foi desenvolvido
-
-*   Ambiente virtual isolado para simulação de ataques.
-*   Coleta e análise de logs de segurança.
-*   Criação e ajuste de regras de detecção.
-*   Correlação de eventos.
-*   Investigação de comportamentos suspeitos.
-*   Mapeamento de eventos para **MITRE ATT&CK**.
-*   Simulação de **brute force SSH**.
-*   Validação da detecção do cenário em aproximadamente **10 segundos** no laboratório.
-
-🔗 **[Ver projeto →](https://github.com/Pendragon711/soc-lab-wazuh)**
-
----
-
-## 🍯 SSH Honeypot Lab — Detection Engine & Live Dashboard
-
-**Honeypot SSH/Web desenvolvido em Python com motor de detecção próprio e dashboard em tempo real.**
-
-**Tecnologias:**
-
-`Python` `Flask` `Socket` `HTTP` `JSONL` `Linux` `VirtualBox`
-
-### O que foi desenvolvido
-
-*   Honeypot SSH e Web construído do zero.
-*   Motor de detecção baseado em **janelas deslizantes**.
-*   Quatro regras independentes para identificação de comportamentos suspeitos.
-*   Deduplicação baseada em baseline para redução de **alert fatigue**.
-*   Persistência estruturada de eventos em **JSONL**.
-*   Dashboard em Flask com atualização em tempo real através de API JSON.
-*   Simulador de ataques para geração controlada de eventos.
-*   Laboratório isolado em rede **Host-Only**.
-
-### Regras de detecção
-
-| Regra                  | Severidade | Gatilho                            |
-| ---------------------- | ---------- | ---------------------------------- |
-| `connection_burst`     | MEDIUM     | 5+ conexões do mesmo IP em 60s     |
-| `repeated_ssh_banner`  | LOW        | 3+ banners SSH do mesmo IP em 60s  |
-| `suspicious_payload`   | HIGH       | Payload contendo padrões suspeitos |
-| `http_suspicious_path` | MEDIUM     | Requisições para paths sensíveis   |
-
-🔗 **[Ver projeto →](https://github.com/Pendragon711/ssh-honeypot-lab)**
-
----
-
 # 🔬 DFIR — Forense Digital & Análise de Malware
 
-Projetos de investigação focados em **preservar evidências, correlacionar fontes e reconstruir a linha do tempo de um incidente**.
+Projetos de investigação focados em **preservar evidências, extrair payloads de rede, analisar comportamento de ameaças e reconstruir a Kill Chain**.
+
+## 🕸️ DFIR Investigation: DanaBot — Network Forensics & Kill Chain Analysis
+
+**Análise forense de tráfego de rede (PCAP) para investigar uma infecção em múltiplos estágios do malware DanaBot, extraindo payloads disfarçados e mapeando o comportamento do atacante.**
+
+**Tecnologias:**
+`Wireshark` `Network Forensics` `VirusTotal` `ANY.RUN` `PowerShell` `OSINT`
+
+### O que foi desenvolvido
+*   **Deep Packet Inspection:** Identificação do IP do atacante e do acesso inicial via requisições HTTP GET.
+*   **Payload Extraction:** Reconstrução de fluxos HTTP (HTTP Streams) para isolar e extrair arquivos maliciosos forçados no download (`.js` disfarçado de `.php`).
+*   **Hash Investigation:** Geração segura de assinaturas criptográficas (SHA-256) via PowerShell para análise em Threat Intel.
+*   **Behavioral Analysis:** Mapeamento da árvore de execução do malware utilizando sandboxes, identificando o abuso de utilitários nativos do Windows (`wscript.exe` / *Living off the Land*).
+*   **Multi-Stage Tracking:** Identificação do download secundário e isolamento do hash MD5 do segundo estágio da infecção (`.dll`).
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/danabot-dfir-investigation)**
+
+---
 
 ## 🔎 DFIR Investigation: XLMRat — Network Forensics & Malware Triage
 
-**Investigação completa de uma cadeia de entrega e execução de malware (lab XLMRat, CyberDefenders), feita a partir de um arquivo PCAP.**
+**Investigação completa de uma cadeia de entrega e execução do AsyncRAT (lab XLMRat, CyberDefenders), correlacionando artefatos de rede e sistema.**
 
 **Tecnologias:**
-
 `Wireshark` `CyberChef` `VirusTotal` `Python` `MITRE ATT&CK`
 
 ### O que foi desenvolvido
-
-*   Análise do tráfego HTTP e identificação do download do primeiro estágio (um `.jpg` que não era imagem).
-*   Desofuscação do payload e cálculo do hash **SHA256**.
-*   Identificação da família do malware (**AsyncRAT**) e do timestamp de compilação do PE.
-*   Investigação do abuso do LOLBin **RegSvcs.exe** para execução furtiva.
-*   Extração de **IOCs** (defanged) e dos arquivos criados pelo script malicioso.
-*   Mapeamento das técnicas no **MITRE ATT&CK** (T1105, T1059.001, T1218.009, T1620).
-*   Relatório técnico com evidências e lições defensivas, em português e inglês.
+*   Análise do tráfego HTTP e identificação do download do primeiro estágio (um arquivo `.jpg` com cabeçalho adulterado).
+*   Desofuscação do payload e identificação do timestamp de compilação do arquivo PE malicioso.
+*   Investigação forense sobre o abuso do LOLBin **RegSvcs.exe** para execução furtiva e evasão de defesa.
+*   Extração de **IOCs** (defanged) e documentação de todos os artefatos dropados pelo script.
+*   Mapeamento de técnicas e táticas no **MITRE ATT&CK** (T1105, T1059.001, T1218.009, T1620).
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/xlmrat-dfir-investigation)**
 
 ---
 
-### Em aprofundamento
+# 🛡️ SOC & Detection Engineering
 
-*   **Em prática:** análise de PCAP, triagem de malware, análise de logs, correlação de eventos no Wazuh e documentação de evidências.
-*   **Em estudo:** `Sysmon` `Autopsy` `Volatility` `MITRE ATT&CK`
+Projetos voltados para engenharia de detecção personalizada, monitoramento ativo e mitigação de fadiga de alertas.
+
+## 🍯 SSH Honeypot Lab — Detection Engine & Live Dashboard
+
+**Honeypot interativo desenvolvido em Python com motor de detecção focado em comportamento e dashboard em tempo real.**
+
+**Tecnologias:**
+`Python` `Flask` `Socket` `Linux` `VirtualBox` `JSONL`
+
+### O que foi desenvolvido
+*   Honeypot corporativo construído do zero com motor de detecção baseado em **janelas deslizantes**.
+*   Deduplicação avançada baseada em baseline para redução de **alert fatigue** no SOC.
+*   Regras independentes de detecção: `connection_burst` (força bruta), `repeated_ssh_banner` (reconhecimento) e `suspicious_payload` (injeção).
+*   Persistência estruturada em **JSONL** pronta para ingestão em SIEM.
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/ssh-honeypot-lab)**
 
 ---
 
-# ⚔️ Visão ofensiva
+## 🛡️ SOC Lab — Wazuh SIEM & Threat Hunting
 
-Conhecer o ataque ajuda a escrever detecções melhores e a entender o rastro que ele deixa. Estes são meus projetos da área ofensiva.
+**Ambiente corporativo de SOC para simulação de APTs, coleta de eventos e engenharia de detecção.**
 
-*   👁️ **[ODIN](https://github.com/Pendragon711/odin-recon)** — Pipeline de reconhecimento web em Go (Subfinder, Naabu, HTTPX e Katana), com detecção de WAF e um banco SQLite por alvo.
-*   👻 **[GHOST](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)** — Framework de pentest web em Python e Playwright, com classificação **CWE**, severidade **CVSS v3.1** e integração com o laboratório Wazuh.
-*   🧪 **Pentest & Exploitation Lab** — Kali Linux, Metasploit, Metasploitable 2, Nmap e Burp Suite em ambiente isolado.
+**Tecnologias:**
+`Wazuh` `SIEM` `Kali Linux` `MITRE ATT&CK`
+
+### O que foi desenvolvido
+*   Coleta, normalização e análise de logs de segurança em endpoints críticos.
+*   Criação e ajuste fino (tuning) de regras de detecção para comportamentos anômalos.
+*   Detecção de ataques de **brute force e movimentação lateral** em under 10 segundos.
+
+🔗 **[Ver projeto →](https://github.com/Pendragon711/soc-lab-wazuh)**
+
+---
+
+# ⚔️ Visão Ofensiva (Red Team Awareness)
+
+Entender o comportamento do atacante é o principal pilar para investigar e detectar ameaças reais.
+
+*   👁️ **[ODIN](https://github.com/Pendragon711/odin-recon)** — Pipeline de reconhecimento em Go (Subfinder, Naabu, HTTPX) para mapeamento de superfície de ataque e detecção de WAF.
+*   👻 **[GHOST](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)** — Framework de automação em Python e Playwright, com classificação **CWE** e **CVSS v3.1**, integrado a alertas do Wazuh.
 
 ---
 
 # ☁️ Cloud & Infrastructure
 
 ## AWS Security Lab — EC2, S3 & VPC
+**Laboratório prático de arquitetura segura em infraestrutura Cloud AWS.**
 
-**Laboratório prático de infraestrutura AWS com foco em fundamentos de cloud e segurança.**
-
-**Tecnologias:**
-
-`AWS` `EC2` `S3` `VPC` `Security Groups` `EBS` `Git`
+**Tecnologias:** `AWS` `EC2` `S3` `VPC` `Security Groups` `IAM`
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/projeto-aws-s3-ec2)**
 
 ---
 
-# 🧰 Security Stack
+# 🧰 Security Stack & Tools
 
-### 🔵 SOC / Blue Team
+### 🔬 DFIR & Malware Analysis
+<p align="left">
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/CyberChef-C8391B?style=for-the-badge" alt="CyberChef" />
+  <img src="https://img.shields.io/badge/VirusTotal-394EFF?style=for-the-badge&logo=virustotal&logoColor=white" alt="VirusTotal" />
+  <img src="https://img.shields.io/badge/Sysinternals-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Sysinternals" />
+</p>
 
+**Expertise:** Network Forensics • PCAP Analysis • Process Tree Analysis • Payload Extraction • Hash-based Investigation • Chain of Custody
+
+---
+
+### 🔵 SOC / Detection Engineering
 <p align="left">
   <img src="https://img.shields.io/badge/Wazuh-3C8CBE?style=for-the-badge&logo=wazuh&logoColor=white" alt="Wazuh" />
   <img src="https://img.shields.io/badge/SIEM-4B0082?style=for-the-badge" alt="SIEM" />
   <img src="https://img.shields.io/badge/MITRE%20ATT%26CK-000000?style=for-the-badge&logo=mitre&logoColor=white" alt="MITRE ATT&CK" />
 </p>
 
-**Foco:** Security Monitoring • Alert Triage • Log Analysis • Threat Detection • Event Correlation • Detection Engineering • Incident Investigation • Playbooks de resposta
+**Expertise:** Threat Hunting • Alert Triage • Log Correlation • Custom Rule Creation • Incident Playbooks
 
 ---
 
-### 🔬 DFIR & Malware Analysis
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/CyberChef-C8391B?style=for-the-badge" alt="CyberChef" />
-  <img src="https://img.shields.io/badge/VirusTotal-394EFF?style=for-the-badge&logo=virustotal&logoColor=white" alt="VirusTotal" />
-</p>
-
-**Foco:** Network Forensics • PCAP Analysis • Malware Triage • Payload Deobfuscation • IOC Extraction • Hash-based Investigation • Evidence Documentation
-
----
-
-### 🌐 Networks & Systems
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
-  <img src="https://img.shields.io/badge/TCP%2FIP-005571?style=for-the-badge" alt="TCP/IP" />
-  <img src="https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white" alt="VirtualBox" />
-</p>
-
-**Foco:** TCP/IP • Network Analysis • Traffic Analysis • Network Troubleshooting • Firewalls • Linux • Virtualization
-
----
-
-### 🐍 Development & Automation
-
+### 🌐 IT / Scripting
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
   <img src="https://img.shields.io/badge/Bash-121011?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" alt="AWS" />
 </p>
-
----
-
-### 🔴 Offensive Security (complemento)
-
-<p align="left">
-  <img src="https://img.shields.io/badge/Burp%20Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" alt="Burp Suite" />
-  <img src="https://img.shields.io/badge/Nmap-4682B4?style=for-the-badge" alt="Nmap" />
-  <img src="https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge" alt="Metasploit" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" alt="Kali Linux" />
-  <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
-</p>
-
-**Standards:** OWASP Top 10 • CWE • CVSS v3.1
-
----
-
-# 🎯 Áreas de Interesse
-
-### 🔵 Defensive Security
-
-`SOC` `SIEM` `Threat Detection` `Detection Engineering` `Log Analysis` `Incident Response` `DFIR` `Malware Analysis` `Network Forensics` `MITRE ATT&CK`
-
 
 ---
 
 # 🎓 Formação & Certificações
 
-🎓 **Graduação em Cibersegurança**
-UniCesumar — Em andamento
-
-📜 **Fundamentos de SOC N1** — Be Safe Inc.
-
-📜 **Analista de SOC na Era da IA** — IBSEC
-
+🎓 **Graduação em Cibersegurança** — UniCesumar (Em andamento)
 📜 **Google Cybersecurity Professional Certificate** — Coursera
-
+📜 **Fundamentos de SOC** — Be Safe Inc.
+📜 **Analista de SOC na Era da IA** — IBSEC
 📜 **Cisco Junior Cybersecurity Analyst** — Cisco Networking Academy
-
 📜 **Nano Course Cybersecurity** — FIAP
-
 📜 **AWS Cloud Practitioner Essentials** — Amazon Web Services
 
 ---
@@ -292,11 +213,8 @@ UniCesumar — Em andamento
 # 📊 GitHub Stats
 
 <div align="center">
-
 <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Pendragon711&theme=dark&hide_border=true"/>
-
 <img height="180em" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Pendragon711&theme=dark"/>
-
 </div>
 
 ---
@@ -322,5 +240,5 @@ UniCesumar — Em andamento
 ---
 
 <p align="center">
-  🛡️ <strong>Building practical defensive security skills through SOC operations, detection engineering and incident response.</strong>
+  🛡️ <strong>"Think like an attacker, investigate like an analyst."</strong>
 </p>
