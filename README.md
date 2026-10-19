@@ -1,6 +1,6 @@
 # 🛡️ Daniel Widal — DFIR & Incident Response
 
-### Analista de Segurança | Digital Forensics | Resposta a Incidentes | Detection Engineering
+### Analista de Cibersegurança | Digital Forensics | Resposta a Incidentes | Detection Engineering
 
 <p align="left">
   <a href="https://pendragon711.github.io">
