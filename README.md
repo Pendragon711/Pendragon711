@@ -1,6 +1,7 @@
-# 🛡️ Daniel Widal — DFIR & Incident Response
 
-### Analista de Cibersegurança | Digital Forensics | Resposta a Incidentes | Threat Hunting
+# 🛡️ Daniel Widal — Threat Intelligence & DFIR
+
+### Analista de Cibersegurança | Threat Intelligence | Digital Forensics | Resposta a Incidentes
 
 <p align="left">
   <a href="https://pendragon711.github.io">
@@ -8,11 +9,11 @@
   </a>
 </p>
 
-Profissional de **Cibersegurança** focado em **Digital Forensics, Incident Response (DFIR)** e **Detection Engineering**, com experiência sólida na investigação e contenção de ameaças, além de base estruturada em infraestrutura e redes.
+Profissional de **Cibersegurança** com foco em **Threat Intelligence, Digital Forensics & Incident Response (DFIR)** e **Detection Engineering**. Atuo na transformação de dados brutos de ameaças em **inteligência acionável** — correlacionando IOCs, TTPs e comportamentos adversários para antecipar ataques, enriquecer detecções e orientar a resposta a incidentes.
 
-Com experiência prática no ecossistema de Segurança da Informação, atuo na **investigação profunda de incidentes** (malware, phishing avançado e movimentação lateral), **forense de rede (PCAP)**, **análise de artefatos maliciosos** e criação de **playbooks de resposta**. 
+Minha abordagem combina **análise forense de artefatos** (PCAP, malware, logs) com **mapeamento de adversários via MITRE ATT&CK**, produzindo inteligência que alimenta playbooks, regras de detecção e hunts proativos. Tenho experiência prática em investigação de incidentes multi-estágio, extração e enriquecimento de IOCs, e construção de laboratórios que simulam o ciclo completo de **intelligence-driven defense**.
 
-Fora do trabalho, construo e mantenho laboratórios avançados: desenvolvi um **honeypot** com motor próprio de detecção em Python, gerencio um ambiente **SIEM (Wazuh)** para threat hunting e documento minuciosamente write-ups de **Network Forensics e Malware Analysis**. Minha base em **pentest** e visão ofensiva me permite mapear o comportamento do adversário (Kill Chain/MITRE ATT&CK) para desenvolver detecções mais resilientes.
+Fora do trabalho, mantenho laboratórios avançados: desenvolvi um **honeypot com motor próprio de detecção em Python** (fonte primária de telemetria para threat hunting), gerencio um ambiente **SIEM (Wazuh)** para correlação e hunting, e documento write-ups de **Network Forensics e Malware Analysis** com foco em extração de IOCs e mapeamento de TTPs. Minha base em **pentest** e visão ofensiva me permite raciocinar como o adversário (Kill Chain / MITRE ATT&CK) para produzir inteligência mais precisa e detecções mais resilientes.
 
 🎓 **Cibersegurança — UniCesumar | Em andamento**
 
@@ -68,14 +69,14 @@ Do alerta à contenção, guiado por evidências e rastreabilidade.
 
 # 🔬 DFIR — Forense Digital & Análise de Malware
 
-Projetos de investigação focados em **preservar evidências, extrair payloads de rede, analisar comportamento de ameaças e reconstruir a Kill Chain**.
+Projetos de investigação focados em **preservar evidências, extrair payloads de rede, analisar comportamento de ameaças, mapear TTPs e reconstruir a Kill Chain**.
 
 ## 🕸️ DFIR Investigation: DanaBot — Network Forensics & Kill Chain Analysis
 
-**Análise forense de tráfego de rede (PCAP) para investigar uma infecção em múltiplos estágios do malware DanaBot, extraindo payloads disfarçados e mapeando o comportamento do atacante.**
+**Análise forense de tráfego de rede (PCAP) para investigar uma infecção em múltiplos estágios do malware DanaBot, extraindo payloads disfarçados, IOCs e mapeando o comportamento do atacante.**
 
 **Tecnologias:**
-`Wireshark` `Network Forensics` `VirusTotal` `ANY.RUN` `PowerShell` `OSINT`
+`Wireshark` `Network Forensics` `VirusTotal` `ANY.RUN` `PowerShell` `MITRE ATT&CK` `OSINT`
 
 ### O que foi desenvolvido
 *   **Deep Packet Inspection:** Identificação do IP do atacante e do acesso inicial via requisições HTTP GET.
@@ -83,6 +84,7 @@ Projetos de investigação focados em **preservar evidências, extrair payloads 
 *   **Hash Investigation:** Geração segura de assinaturas criptográficas (SHA-256) via PowerShell para análise em Threat Intel.
 *   **Behavioral Analysis:** Mapeamento da árvore de execução do malware utilizando sandboxes, identificando o abuso de utilitários nativos do Windows (`wscript.exe` / *Living off the Land*).
 *   **Multi-Stage Tracking:** Identificação do download secundário e isolamento do hash MD5 do segundo estágio da infecção (`.dll`).
+*   **IOC Reporting:** Documentação de IOCs (defanged) e comportamento adversário para alimentar detecções e hunts.
 
 🔗 **[Ver projeto →](https://github.com/Pendragon711/danabot-dfir-investigation)**
 
@@ -90,7 +92,7 @@ Projetos de investigação focados em **preservar evidências, extrair payloads 
 
 ## 🔎 DFIR Investigation: XLMRat — Network Forensics & Malware Triage
 
-**Investigação completa de uma cadeia de entrega e execução do AsyncRAT (lab XLMRat, CyberDefenders), correlacionando artefatos de rede e sistema.**
+**Investigação completa de uma cadeia de entrega e execução do AsyncRAT (lab XLMRat, CyberDefenders), correlacionando artefatos de rede e sistema, com extração de IOCs e mapeamento de TTPs.**
 
 **Tecnologias:**
 `Wireshark` `CyberChef` `VirusTotal` `Python` `MITRE ATT&CK`
@@ -106,60 +108,11 @@ Projetos de investigação focados em **preservar evidências, extrair payloads 
 
 ---
 
-# 🛡️ SOC & Detection Engineering
-
-Projetos voltados para engenharia de detecção personalizada, monitoramento ativo e mitigação de fadiga de alertas.
-
-## 🍯 SSH Honeypot Lab — Detection Engine & Live Dashboard
-
-**Honeypot interativo desenvolvido em Python com motor de detecção focado em comportamento e dashboard em tempo real.**
-
-**Tecnologias:**
-`Python` `Flask` `Socket` `Linux` `VirtualBox` `JSONL`
-
-### O que foi desenvolvido
-*   Honeypot corporativo construído do zero com motor de detecção baseado em **janelas deslizantes**.
-*   Deduplicação avançada baseada em baseline para redução de **alert fatigue** no SOC.
-*   Regras independentes de detecção: `connection_burst` (força bruta), `repeated_ssh_banner` (reconhecimento) e `suspicious_payload` (injeção).
-*   Persistência estruturada em **JSONL** pronta para ingestão em SIEM.
-
-🔗 **[Ver projeto →](https://github.com/Pendragon711/ssh-honeypot-lab)**
-
----
-
-## 🛡️ SOC Lab — Wazuh SIEM & Threat Hunting
-
-**Ambiente corporativo de SOC para simulação de APTs, coleta de eventos e engenharia de detecção.**
-
-**Tecnologias:**
-`Wazuh` `SIEM` `Kali Linux` `MITRE ATT&CK`
-
-### O que foi desenvolvido
-*   Coleta, normalização e análise de logs de segurança em endpoints críticos.
-*   Criação e ajuste fino (tuning) de regras de detecção para comportamentos anômalos.
-*   Detecção de ataques de **brute force e movimentação lateral** em under 10 segundos.
-
-🔗 **[Ver projeto →](https://github.com/Pendragon711/soc-lab-wazuh)**
-
----
-
 # ⚔️ Visão Ofensiva (Red Team Awareness)
 
-Entender o comportamento do atacante é o principal pilar para investigar e detectar ameaças reais.
+Entender o comportamento do atacante é o principal pilar para investigar, detectar e produzir inteligência sobre ameaças reais.
 
 *   👁️ **[ODIN](https://github.com/Pendragon711/odin-recon)** — Pipeline de reconhecimento em Go (Subfinder, Naabu, HTTPX) para mapeamento de superfície de ataque e detecção de WAF.
-*   👻 **[GHOST](https://github.com/Pendragon711/GHOST---Web-Pentest-Framework)** — Framework de automação em Python e Playwright, com classificação **CWE** e **CVSS v3.1**, integrado a alertas do Wazuh.
-
----
-
-# ☁️ Cloud & Infrastructure
-
-## AWS Security Lab — EC2, S3 & VPC
-**Laboratório prático de arquitetura segura em infraestrutura Cloud AWS.**
-
-**Tecnologias:** `AWS` `EC2` `S3` `VPC` `Security Groups` `IAM`
-
-🔗 **[Ver projeto →](https://github.com/Pendragon711/projeto-aws-s3-ec2)**
 
 ---
 
