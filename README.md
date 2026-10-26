@@ -154,11 +154,17 @@ Entender o comportamento do atacante é o principal pilar para investigar, detec
 # 🎓 Formação & Certificações
 
 🎓 **Graduação em Cibersegurança** — UniCesumar (Em andamento)
+
 📜 **Google Cybersecurity Professional Certificate** — Coursera
+
 📜 **Fundamentos de SOC** — Be Safe Inc.
+
 📜 **Analista de SOC na Era da IA** — IBSEC
+
 📜 **Cisco Junior Cybersecurity Analyst** — Cisco Networking Academy
+
 📜 **Nano Course Cybersecurity** — FIAP
+
 📜 **AWS Cloud Practitioner Essentials** — Amazon Web Services
 
 ---
