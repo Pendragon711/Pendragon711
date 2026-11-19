@@ -1,0 +1,103 @@
+<svg width="1000" height="360" viewBox="0 0 1000 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1000" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#07080A"/>
+      <stop offset="60%" stop-color="#0C0E13"/>
+      <stop offset="100%" stop-color="#14110A"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5D77F"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#8C6D1F"/>
+    </linearGradient>
+    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.22"/>
+      <stop offset="70%" stop-color="#D4AF37" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#07080A" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#D4AF37" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <clipPath id="typingClip">
+      <rect x="48" y="242" width="0" height="26">
+        <animate attributeName="width" values="0;430;430;0" keyTimes="0;0.45;0.88;1" dur="6.5s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .title { font: 800 38px 'Segoe UI', system-ui, -apple-system, sans-serif; fill: #F9FAFB; letter-spacing: -0.5px; }
+    .gold-accent { fill: url(#goldGrad); }
+    .header-meta { font: 600 11px 'Consolas', 'Courier New', monospace; fill: #D4AF37; letter-spacing: 2.5px; }
+    .tag-top { font: 700 11px 'Consolas', 'Courier New', monospace; fill: #D4AF37; letter-spacing: 2px; }
+    .subtitle { font: 500 15px 'Segoe UI', system-ui, sans-serif; fill: #D1D5DB; }
+    .desc { font: 400 14px 'Segoe UI', system-ui, sans-serif; fill: #9CA3AF; }
+    .term-user { font: 600 13px 'Consolas', 'Courier New', monospace; fill: #9A7B2C; }
+    .term-cmd { font: 600 14px 'Consolas', 'Courier New', monospace; fill: #F5D77F; }
+    .footer-meta { font: 600 10.5px 'Consolas', 'Courier New', monospace; fill: #8C7328; letter-spacing: 1.8px; }
+
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes spinRadar { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes pulseRing { 0%, 100% { opacity: 0.25; transform: scale(0.98); } 50% { opacity: 0.75; transform: scale(1.02); } }
+    @keyframes floatShield { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
+
+    .cursor { animation: blink 0.9s infinite; }
+    .radar-sweep { transform-origin: 815px 185px; animation: spinRadar 5s linear infinite; }
+    .pulse-circle { transform-origin: 815px 185px; animation: pulseRing 3.2s ease-in-out infinite; }
+    .emblem-float { animation: floatShield 4s ease-in-out infinite; }
+  </style>
+
+  <rect x="1" y="1" width="998" height="358" rx="18" fill="url(#bgGrad)" stroke="#3D3112" stroke-width="1.5"/>
+  <rect x="1" y="1" width="998" height="358" rx="18" fill="url(#grid)"/>
+
+  <path d="M 18 10 L 10 10 L 10 26" stroke="#D4AF37" stroke-width="2" fill="none"/>
+  <path d="M 982 10 L 990 10 L 990 26" stroke="#D4AF37" stroke-width="2" fill="none"/>
+  <path d="M 18 350 L 10 350 L 10 334" stroke="#D4AF37" stroke-width="2" fill="none"/>
+  <path d="M 982 350 L 990 350 L 990 334" stroke="#D4AF37" stroke-width="2" fill="none"/>
+
+  <circle cx="32" cy="24" r="4.5" fill="#D4AF37"/>
+  <circle cx="48" cy="24" r="4.5" fill="#8C6D1F"/>
+  <circle cx="64" cy="24" r="4.5" fill="#3D3112"/>
+  <text x="500" y="28" text-anchor="middle" class="header-meta">CLASSIFIED // CYBER THREAT INTELLIGENCE DOSSIER</text>
+  <text x="965" y="28" text-anchor="end" class="header-meta">CLEARANCE: TOP SECRET</text>
+  <line x1="20" y1="44" x2="980" y2="44" stroke="#29210D" stroke-width="1"/>
+
+  <text x="36" y="78" class="tag-top">OP-PENDRAGON // THREAT HUNTING &amp; DETECTION</text>
+  <text x="36" y="122" class="title">Daniel Widal <tspan class="gold-accent">◈</tspan></text>
+  <text x="36" y="148" class="subtitle">Analista de Segurança da Informação · CTI &amp; Threat Hunting</text>
+  <text x="36" y="178" class="desc">Transformando telemetria bruta e artefatos maliciosos em defesa proativa.</text>
+  <text x="36" y="198" class="desc">PCAP Analysis, Malware Triage, MITRE ATT&amp;CK &amp; Detection Engineering.</text>
+
+  <rect x="36" y="216" width="540" height="72" rx="10" fill="#050608" stroke="#4D3D14" stroke-width="1.2"/>
+  <text x="52" y="238" class="term-user">daniel@cti-ops:~/threat-intel$</text>
+  <g clip-path="url(#typingClip)">
+    <text x="52" y="264" class="term-cmd">&gt; hunt.py --extract-iocs --mitre ATT&amp;CK --hunt</text>
+  </g>
+  <rect x="488" y="249" width="9" height="17" fill="#D4AF37" class="cursor"/>
+
+  <text x="36" y="324" class="footer-meta">CYBER THREAT INTELLIGENCE · THREAT HUNTING · DETECTION ENGINEERING</text>
+
+  <circle cx="815" cy="185" r="115" fill="url(#radarGlow)"/>
+  <circle cx="815" cy="185" r="98" stroke="#3D3112" stroke-width="1" stroke-dasharray="4 4" class="pulse-circle"/>
+  <circle cx="815" cy="185" r="72" stroke="#594717" stroke-width="1"/>
+  <circle cx="815" cy="185" r="44" stroke="#3D3112" stroke-width="1"/>
+  <line x1="705" y1="185" x2="925" y2="185" stroke="#29210D" stroke-width="1"/>
+  <line x1="815" y1="75" x2="815" y2="295" stroke="#29210D" stroke-width="1"/>
+
+  <g class="radar-sweep">
+    <path d="M 815 185 L 815 87 A 98 98 0 0 1 898 134 Z" fill="#D4AF37" fill-opacity="0.16"/>
+    <line x1="815" y1="185" x2="815" y2="87" stroke="#F5D77F" stroke-width="1.5"/>
+  </g>
+
+  <circle cx="852" cy="142" r="3" fill="#F5D77F"/>
+  <circle cx="772" cy="218" r="2.5" fill="#D4AF37"/>
+
+  <g class="emblem-float">
+    <path d="M815 136 L854 152 V186 C854 212 837 231 815 240 C793 231 776 212 776 186 V152 L815 136 Z" fill="#0B0D12" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <path d="M815 147 L843 159 V185 C843 205 831 220 815 227 C799 220 787 205 787 185 V159 L815 147 Z" fill="#14110A" stroke="#6E5619" stroke-width="1"/>
+    <path d="M796 186 Q815 168 834 186 Q815 204 796 186 Z" fill="none" stroke="#F5D77F" stroke-width="2"/>
+    <circle cx="815" cy="186" r="5" fill="#D4AF37"/>
+  </g>
+
+  <text x="815" y="324" text-anchor="middle" class="footer-meta">UNIT // PENDRAGON-711</text>
+</svg>
