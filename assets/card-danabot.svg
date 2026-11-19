@@ -1,0 +1,31 @@
+<svg width="1000" height="215" viewBox="0 0 1000 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tag { font: 700 11px 'Consolas', monospace; fill: #D4AF37; letter-spacing: 1.5px; }
+    .title { font: 700 20px 'Segoe UI', sans-serif; fill: #F9FAFB; }
+    .sub { font: 400 13.5px 'Segoe UI', sans-serif; fill: #D1D5DB; }
+    .bullet { font: 400 13px 'Segoe UI', sans-serif; fill: #9CA3AF; }
+    .b-bold { font: 600 13px 'Segoe UI', sans-serif; fill: #F5D77F; }
+    .pill { font: 600 11px 'Consolas', monospace; fill: #D4AF37; }
+    .cta { font: 700 12px 'Consolas', monospace; fill: #07080A; }
+  </style>
+  <rect x="1" y="1" width="998" height="213" rx="12" fill="#0A0B0F" stroke="#4D3D14" stroke-width="1.2"/>
+  <rect x="1" y="1" width="6" height="213" rx="3" fill="#D4AF37"/>
+
+  <text x="24" y="28" class="tag">CASE FILE // DFIR-001 · PCAP &amp; MULTI-STAGE MALWARE</text>
+  <rect x="810" y="14" width="170" height="26" rx="13" fill="#D4AF37"/>
+  <text x="895" y="31" text-anchor="middle" class="cta">ABRIR DOSSIÊ →</text>
+
+  <text x="24" y="56" class="title">🕸️ DanaBot — Network Traffic &amp; Kill Chain</text>
+  <text x="24" y="78" class="sub">Investigação de tráfego PCAP isolando payloads disfarçados, infraestrutura C2 e abuso de LOLBins.</text>
+
+  <text x="24" y="106" class="bullet">▸ <tspan class="b-bold">Deep Packet Inspection:</tspan> Identificação do vetor inicial via requisições HTTP GET maliciosas.</text>
+  <text x="24" y="126" class="bullet">▸ <tspan class="b-bold">Payload Extraction:</tspan> Reconstrução de fluxos HTTP isolando artefatos (.js disfarçado de .php) e DLLs.</text>
+  <text x="24" y="146" class="bullet">▸ <tspan class="b-bold">Behavioral &amp; LOLBins:</tspan> Rastreio de execução furtiva via wscript.exe e geração de IOCs defanged (SHA-256).</text>
+
+  <!-- Tags inferiores -->
+  <rect x="24" y="168" width="92" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="70" y="184" text-anchor="middle" class="pill">Wireshark</text>
+  <rect x="124" y="168" width="98" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="173" y="184" text-anchor="middle" class="pill">VirusTotal</text>
+  <rect x="230" y="168" width="84" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="272" y="184" text-anchor="middle" class="pill">ANY.RUN</text>
+  <rect x="322" y="168" width="116" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="380" y="184" text-anchor="middle" class="pill">MITRE ATT&amp;CK</text>
+  <rect x="446" y="168" width="96" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="494" y="184" text-anchor="middle" class="pill">PowerShell</text>
+</svg>

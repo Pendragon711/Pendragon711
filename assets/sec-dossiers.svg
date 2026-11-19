@@ -1,0 +1,15 @@
+<svg width="1000" height="54" viewBox="0 0 1000 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .code { font: 700 11px 'Consolas', monospace; fill: #D4AF37; letter-spacing: 2px; }
+    .title { font: 700 18px 'Segoe UI', system-ui, sans-serif; fill: #F9FAFB; letter-spacing: 0.5px; }
+    .status { font: 600 11px 'Consolas', monospace; fill: #8C7328; letter-spacing: 1.5px; }
+    @keyframes led { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+    .pulse { animation: led 2s infinite; }
+  </style>
+  <rect x="0.5" y="4" width="999" height="46" rx="8" fill="#090A0E" stroke="#3D3112"/>
+  <path d="M 0.5 14 V 4 H 14" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="22" cy="27" r="4" fill="#D4AF37" class="pulse"/>
+  <text x="36" y="31" class="code">[SEC-02]</text>
+  <text x="115" y="32" class="title">THREAT INTELLIGENCE &amp; MALWARE ANALYSIS</text>
+  <text x="980" y="31" text-anchor="end" class="status">ACTIVE CASE FILES // DFIR</text>
+</svg>

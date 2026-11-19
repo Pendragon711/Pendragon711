@@ -1,0 +1,43 @@
+<svg width="1000" height="175" viewBox="0 0 1000 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .num { font: 700 11px 'Consolas', monospace; fill: #D4AF37; letter-spacing: 1.5px; }
+    .head { font: 700 14.5px 'Segoe UI', sans-serif; fill: #F9FAFB; }
+    .body { font: 400 12.5px 'Segoe UI', sans-serif; fill: #9CA3AF; }
+  </style>
+
+  <!-- Box 1 -->
+  <rect x="1" y="1" width="238" height="173" rx="10" fill="#0A0B0F" stroke="#3D3112"/>
+  <text x="16" y="26" class="num">FASE 01 // TELEMETRIA</text>
+  <text x="16" y="48" class="head">Coleta &amp; Captura</text>
+  <text x="16" y="74" class="body">Honeypots próprios, logs de</text>
+  <text x="16" y="92" class="body">WAF/SIEM, feeds OSINT e</text>
+  <text x="16" y="110" class="body">capturas de rede (PCAP).</text>
+  <line x1="16" y1="152" x2="222" y2="152" stroke="#D4AF37" stroke-opacity="0.4" stroke-width="2"/>
+
+  <!-- Box 2 -->
+  <rect x="254" y="1" width="238" height="173" rx="10" fill="#0A0B0F" stroke="#3D3112"/>
+  <text x="269" y="26" class="num">FASE 02 // TRIAGEM</text>
+  <text x="269" y="48" class="head">Enriquecimento IOC</text>
+  <text x="269" y="74" class="body">Extração, validação e defang</text>
+  <text x="269" y="92" class="body">de hashes, IPs e C2 via</text>
+  <text x="269" y="110" class="body">VirusTotal e ANY.RUN.</text>
+  <line x1="269" y1="152" x2="475" y2="152" stroke="#D4AF37" stroke-opacity="0.6" stroke-width="2"/>
+
+  <!-- Box 3 -->
+  <rect x="507" y="1" width="238" height="173" rx="10" fill="#0A0B0F" stroke="#3D3112"/>
+  <text x="522" y="26" class="num">FASE 03 // ADVERSÁRIO</text>
+  <text x="522" y="48" class="head">Análise de TTPs</text>
+  <text x="522" y="74" class="body">Reconstrução de Kill Chain,</text>
+  <text x="522" y="92" class="body">rastreio de LOLBins e mapea-</text>
+  <text x="522" y="110" class="body">mento no MITRE ATT&amp;CK.</text>
+  <line x1="522" y1="152" x2="728" y2="152" stroke="#D4AF37" stroke-opacity="0.8" stroke-width="2"/>
+
+  <!-- Box 4 -->
+  <rect x="760" y="1" width="239" height="173" rx="10" fill="#0D0C08" stroke="#8C6D1F"/>
+  <text x="775" y="26" class="num">FASE 04 // DEFESA</text>
+  <text x="775" y="48" class="head">Operacionalização</text>
+  <text x="775" y="74" class="body">Regras proativas em WAF,</text>
+  <text x="775" y="92" class="body">SIEM (Wazuh), YARA/Sigma</text>
+  <text x="775" y="110" class="body">e threat hunts contínuos.</text>
+  <line x1="775" y1="152" x2="982" y2="152" stroke="#F5D77F" stroke-width="2"/>
+</svg>

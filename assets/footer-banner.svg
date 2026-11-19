@@ -1,0 +1,16 @@
+<svg width="1000" height="86" viewBox="0 0 1000 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .quote { font: 700 15px 'Segoe UI', sans-serif; fill: #F5D77F; letter-spacing: 0.5px; }
+    .meta { font: 600 10.5px 'Consolas', monospace; fill: #8C7328; letter-spacing: 2px; }
+    @keyframes scan {
+      0% { transform: translateX(0px); opacity: 0.2; }
+      50% { transform: translateX(920px); opacity: 1; }
+      100% { transform: translateX(0px); opacity: 0.2; }
+    }
+    .scanner { animation: scan 6s ease-in-out infinite; }
+  </style>
+  <rect x="1" y="1" width="998" height="84" rx="12" fill="#07080A" stroke="#3D3112"/>
+  <rect x="20" y="10" width="40" height="2" fill="#D4AF37" class="scanner"/>
+  <text x="500" y="42" text-anchor="middle" class="quote">◈  "TURN RAW THREAT DATA INTO ACTIONABLE DEFENSE."  ◈</text>
+  <text x="500" y="66" text-anchor="middle" class="meta">END OF DOSSIER // OP-PENDRAGON · ALL TELEMETRY LOGGED</text>
+</svg>

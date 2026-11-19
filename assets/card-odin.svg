@@ -1,0 +1,21 @@
+<svg width="1000" height="135" viewBox="0 0 1000 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tag { font: 700 11px 'Consolas', monospace; fill: #D4AF37; letter-spacing: 1.5px; }
+    .title { font: 700 19px 'Segoe UI', sans-serif; fill: #F9FAFB; }
+    .sub { font: 400 13.5px 'Segoe UI', sans-serif; fill: #D1D5DB; }
+    .pill { font: 600 11px 'Consolas', monospace; fill: #D4AF37; }
+    .cta { font: 700 12px 'Consolas', monospace; fill: #07080A; }
+  </style>
+  <rect x="1" y="1" width="998" height="133" rx="12" fill="#0C0B08" stroke="#6E5619" stroke-width="1.2"/>
+  <text x="24" y="28" class="tag">TOOLING // ATTACK SURFACE MANAGEMENT (ASM)</text>
+  <rect x="810" y="14" width="170" height="26" rx="13" fill="#D4AF37"/>
+  <text x="895" y="31" text-anchor="middle" class="cta">VER REPOSITÓRIO →</text>
+
+  <text x="24" y="58" class="title">👁️ ODIN — Automated Recon &amp; ASM Pipeline</text>
+  <text x="24" y="80" class="sub">Pipeline em Go orquestrando Subfinder, Naabu e HTTPX para descoberta contínua de ativos expostos e detecção de WAF.</text>
+
+  <rect x="24" y="96" width="60" height="22" rx="5" fill="#14110A" stroke="#594717"/><text x="54" y="111" text-anchor="middle" class="pill">Go</text>
+  <rect x="92" y="96" width="92" height="22" rx="5" fill="#14110A" stroke="#594717"/><text x="138" y="111" text-anchor="middle" class="pill">Subfinder</text>
+  <rect x="192" y="96" width="70" height="22" rx="5" fill="#14110A" stroke="#594717"/><text x="227" y="111" text-anchor="middle" class="pill">Naabu</text>
+  <rect x="270" y="96" width="70" height="22" rx="5" fill="#14110A" stroke="#594717"/><text x="305" y="111" text-anchor="middle" class="pill">HTTPX</text>
+</svg>

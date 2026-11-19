@@ -1,0 +1,31 @@
+<svg width="1000" height="215" viewBox="0 0 1000 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tag { font: 700 11px 'Consolas', monospace; fill: #D4AF37; letter-spacing: 1.5px; }
+    .title { font: 700 20px 'Segoe UI', sans-serif; fill: #F9FAFB; }
+    .sub { font: 400 13.5px 'Segoe UI', sans-serif; fill: #D1D5DB; }
+    .bullet { font: 400 13px 'Segoe UI', sans-serif; fill: #9CA3AF; }
+    .b-bold { font: 600 13px 'Segoe UI', sans-serif; fill: #F5D77F; }
+    .pill { font: 600 11px 'Consolas', monospace; fill: #D4AF37; }
+    .cta { font: 700 12px 'Consolas', monospace; fill: #07080A; }
+  </style>
+  <rect x="1" y="1" width="998" height="213" rx="12" fill="#0A0B0F" stroke="#4D3D14" stroke-width="1.2"/>
+  <rect x="1" y="1" width="6" height="213" rx="3" fill="#D4AF37"/>
+
+  <text x="24" y="28" class="tag">CASE FILE // DFIR-002 · DELIVERY CHAIN &amp; DEFENSE EVASION</text>
+  <rect x="810" y="14" width="170" height="26" rx="13" fill="#D4AF37"/>
+  <text x="895" y="31" text-anchor="middle" class="cta">ABRIR DOSSIÊ →</text>
+
+  <text x="24" y="56" class="title">🔎 XLMRat (AsyncRAT) — Delivery Chain &amp; Triage</text>
+  <text x="24" y="78" class="sub">Correlação de artefatos de rede e host para extração de payloads ocultos e mapeamento MITRE ATT&amp;CK.</text>
+
+  <text x="24" y="106" class="bullet">▸ <tspan class="b-bold">Traffic &amp; Spoofed Header:</tspan> Detecção de download HTTP de arquivo .jpg com cabeçalho adulterado.</text>
+  <text x="24" y="126" class="bullet">▸ <tspan class="b-bold">Deobfuscation &amp; Metadata:</tspan> Desofuscação de payload e extração de timestamps de compilação.</text>
+  <text x="24" y="146" class="bullet">▸ <tspan class="b-bold">ATT&amp;CK Mapping:</tspan> Abuso do LOLBin RegSvcs.exe mapeado para T1105, T1059.001, T1218.009 e T1620.</text>
+
+  <!-- Tags inferiores -->
+  <rect x="24" y="168" width="92" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="70" y="184" text-anchor="middle" class="pill">Wireshark</text>
+  <rect x="124" y="168" width="92" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="170" y="184" text-anchor="middle" class="pill">CyberChef</text>
+  <rect x="224" y="168" width="98" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="273" y="184" text-anchor="middle" class="pill">VirusTotal</text>
+  <rect x="330" y="168" width="76" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="368" y="184" text-anchor="middle" class="pill">Python</text>
+  <rect x="414" y="168" width="116" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="472" y="184" text-anchor="middle" class="pill">MITRE ATT&amp;CK</text>
+</svg>
