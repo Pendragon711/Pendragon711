@@ -9,7 +9,6 @@
     .cta { font: 700 12px 'Consolas', monospace; fill: #07080A; }
   </style>
   <rect x="1" y="1" width="998" height="223" rx="12" fill="#0C0B08" stroke="#6E5619" stroke-width="1.2"/>
-  <rect x="1" y="12" width="4" height="201" rx="2" fill="#D4AF37"/>
 
   <text x="24" y="28" class="tag">TOOLING // THREAT INTELLIGENCE WORKBENCH (CTI)</text>
   <rect x="810" y="14" width="170" height="26" rx="13" fill="#D4AF37"/>

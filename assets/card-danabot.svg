@@ -9,7 +9,6 @@
     .cta { font: 700 12px 'Consolas', monospace; fill: #07080A; }
   </style>
   <rect x="1" y="1" width="998" height="213" rx="12" fill="#0A0B0F" stroke="#4D3D14" stroke-width="1.2"/>
-  <rect x="1" y="1" width="6" height="213" rx="3" fill="#D4AF37"/>
 
   <text x="24" y="28" class="tag">CASE FILE // DFIR-001 · PCAP &amp; MULTI-STAGE MALWARE</text>
   <rect x="810" y="14" width="170" height="26" rx="13" fill="#D4AF37"/>
