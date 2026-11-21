@@ -78,6 +78,7 @@ Technical investigations focused on **payload extraction, behavioral threat anal
 Mapping exposed attack surfaces is critical to anticipate exploitation vectors and prioritize defenses.
 
 - 👁️ **[ODIN](https://github.com/Pendragon711/odin-recon)** — Automated reconnaissance and Attack Surface Management (ASM) pipeline written in Go (`Subfinder`, `Naabu`, `HTTPX`) for asset discovery and WAF detection.
+- 🛡️ **[ARGOS](https://github.com/Pendragon711/argos-cti)** — Local-first Threat Intelligence Investigation Framework written in Python (`SQLite`, `Pydantic`, `Typer`, `STIX 2.1`) featuring deterministic IOC normalization, epistemic tracking, bounded graph pivoting, and a local Web UI workbench.
 
 ---
 

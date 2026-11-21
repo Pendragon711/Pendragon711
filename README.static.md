@@ -59,6 +59,12 @@ Atuo na coleta, enriquecimento e operacionalização de dados de ameaças — co
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Pendragon711/argos-cti">
+    <img src="./assets/card-argos.svg" width="100%" alt="ARGOS Threat Intelligence Framework" />
+  </a>
+</p>
+
 <br/>
 
 <a id="stack"></a>
