@@ -47,6 +47,12 @@ Atuo na coleta, enriquecimento e operacionalização de dados de ameaças — co
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Pendragon711/argos-cti">
+    <img src="./assets/card-argos.svg" width="100%" alt="ARGOS Threat Intelligence Framework" />
+  </a>
+</p>
+
 <br/>
 
 <p align="center">
@@ -56,12 +62,6 @@ Atuo na coleta, enriquecimento e operacionalização de dados de ameaças — co
 <p align="center">
   <a href="https://github.com/Pendragon711/odin-recon">
     <img src="./assets/card-odin.svg" width="100%" alt="ODIN Recon Pipeline" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Pendragon711/argos-cti">
-    <img src="./assets/card-argos.svg" width="100%" alt="ARGOS Threat Intelligence Framework" />
   </a>
 </p>
 

@@ -73,12 +73,24 @@ Technical investigations focused on **payload extraction, behavioral threat anal
 
 ---
 
+### 🛡️ CTI Workbench: ARGOS — Threat Intelligence Investigation Framework
+
+> **Local-first threat intelligence investigation framework in Python with SQLite persistence, deterministic IOC normalization, epistemic status tracking, bounded graph pivoting, STIX 2.1 export, and a local Web UI.**
+
+`Python` `Pydantic` `SQLite` `Typer` `Rich` `STIX 2.1` `Web UI`
+
+- **Deterministic Normalization & Epistemic Rigor:** Sanitizes and classifies IOCs (`ipv4`, `domain`, `url`, `hashes`, `asn`, `email`) while tracking `observed`, `reported`, `inferred`, and `unverified` states without arbitrary threat scores.
+- **Investigation Pipeline:** Orchestrates file/feed collection, structural correlation, bounded pivoting (`max_depth`/`max_steps`), multi-dimensional assessment, and Markdown/JSON/CSV/STIX 2.1 outputs.
+
+🔗 **[Explore ARGOS Repository →](https://github.com/Pendragon711/argos-cti)**
+
+---
+
 ## ⚔️ Attack Surface & Recon (Offensive Perspective)
 
 Mapping exposed attack surfaces is critical to anticipate exploitation vectors and prioritize defenses.
 
 - 👁️ **[ODIN](https://github.com/Pendragon711/odin-recon)** — Automated reconnaissance and Attack Surface Management (ASM) pipeline written in Go (`Subfinder`, `Naabu`, `HTTPX`) for asset discovery and WAF detection.
-- 🛡️ **[ARGOS](https://github.com/Pendragon711/argos-cti)** — Local-first Threat Intelligence Investigation Framework written in Python (`SQLite`, `Pydantic`, `Typer`, `STIX 2.1`) featuring deterministic IOC normalization, epistemic tracking, bounded graph pivoting, and a local Web UI workbench.
 
 ---
 
