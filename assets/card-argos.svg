@@ -10,20 +10,20 @@
   </style>
   <rect x="1" y="1" width="998" height="223" rx="12" fill="#0C0B08" stroke="#6E5619" stroke-width="1.2"/>
 
-  <text x="24" y="28" class="tag">TOOLING // THREAT INTELLIGENCE WORKBENCH (CTI)</text>
+  <text x="24" y="28" class="tag">TOOLING // CYBER THREAT INTELLIGENCE PLATFORM (CTI)</text>
   <rect x="810" y="14" width="170" height="26" rx="13" fill="#D4AF37"/>
   <text x="895" y="31" text-anchor="middle" class="cta">VER REPOSITÓRIO →</text>
 
-  <text x="24" y="58" class="title">🛡️ ARGOS — Threat Intelligence Investigation Framework</text>
-  <text x="24" y="80" class="sub">Framework local-first em Python com persistência SQLite, normalização determinística e Web UI local.</text>
+  <text x="24" y="58" class="title">🛡️ ARGOS CTI — Threat Intelligence Investigation Platform</text>
+  <text x="24" y="80" class="sub">Plataforma local-first em Go com persistência SQLite, Web UI embarcada em 5 etapas e enriquecimento CTI.</text>
 
-  <text x="24" y="106" class="b-key">▸ Normalização &amp; Rigor Epistêmico: <tspan class="b-val">Extração de IOCs com tratamento de defang e estados (observed, reported, inferred).</tspan></text>
-  <text x="24" y="126" class="b-key">▸ Correlação &amp; Pivot Limitado: <tspan class="b-val">Travessia estrutural controlada (max_depth/max_steps) sem expansão descontrolada.</tspan></text>
-  <text x="24" y="146" class="b-key">▸ Avaliação &amp; Interoperabilidade: <tspan class="b-val">Análise multidimensional sem scores arbitrários e exportação para Markdown, CSV e STIX 2.1.</tspan></text>
+  <text x="24" y="106" class="b-key">▸ Triagem &amp; Enriquecimento: <tspan class="b-val">Extração/defang de IOCs com consultas concorrentes (AbuseIPDB, VirusTotal, OTX, CrowdSec).</tspan></text>
+  <text x="24" y="126" class="b-key">▸ Evidências &amp; Pivot em Grafo: <tspan class="b-val">Registros auditáveis com hash SHA-256, certeza epistêmica e travessia por profundidade.</tspan></text>
+  <text x="24" y="146" class="b-key">▸ Avaliação &amp; Interoperabilidade: <tspan class="b-val">Consolidação de risco/veredito e exportação para Markdown, STIX 2.1, CSV e JSON.</tspan></text>
 
-  <rect x="24" y="172" width="76" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="62" y="188" text-anchor="middle" class="pill">Python</text>
-  <rect x="108" y="172" width="76" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="146" y="188" text-anchor="middle" class="pill">SQLite</text>
-  <rect x="192" y="172" width="84" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="234" y="188" text-anchor="middle" class="pill">Pydantic</text>
-  <rect x="284" y="172" width="92" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="330" y="188" text-anchor="middle" class="pill">STIX 2.1</text>
-  <rect x="384" y="172" width="84" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="426" y="188" text-anchor="middle" class="pill">Web UI</text>
+  <rect x="24" y="172" width="64" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="56" y="188" text-anchor="middle" class="pill">Go</text>
+  <rect x="96" y="172" width="76" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="134" y="188" text-anchor="middle" class="pill">SQLite</text>
+  <rect x="180" y="172" width="84" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="222" y="188" text-anchor="middle" class="pill">Web UI</text>
+  <rect x="272" y="172" width="92" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="318" y="188" text-anchor="middle" class="pill">STIX 2.1</text>
+  <rect x="372" y="172" width="124" height="24" rx="5" fill="#14110A" stroke="#594717"/><text x="434" y="188" text-anchor="middle" class="pill">Multi-CTI API</text>
 </svg>
