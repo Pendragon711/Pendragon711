@@ -73,14 +73,14 @@ Technical investigations focused on **payload extraction, behavioral threat anal
 
 ---
 
-### 🛡️ CTI Workbench: ARGOS — Threat Intelligence Investigation Framework
+### 🛡️ CTI Workbench: ARGOS CTI — Threat Intelligence Platform
 
-> **Local-first threat intelligence investigation framework in Python with SQLite persistence, deterministic IOC normalization, epistemic status tracking, bounded graph pivoting, STIX 2.1 export, and a local Web UI.**
+> **Local-first cyber threat intelligence platform in Go with SQLite persistence, embedded 5-step Web UI (`127.0.0.1:8080`), concurrent multi-provider enrichment, SHA-256 evidence tracking, depth-bounded graph pivoting, and STIX 2.1 / Markdown / CSV / JSON export.**
 
-`Python` `Pydantic` `SQLite` `Typer` `Rich` `STIX 2.1` `Web UI`
+`Go` `SQLite` `Web UI` `STIX 2.1` `AbuseIPDB` `VirusTotal` `OTX` `CrowdSec`
 
-- **Deterministic Normalization & Epistemic Rigor:** Sanitizes and classifies IOCs (`ipv4`, `domain`, `url`, `hashes`, `asn`, `email`) while tracking `observed`, `reported`, `inferred`, and `unverified` states without arbitrary threat scores.
-- **Investigation Pipeline:** Orchestrates file/feed collection, structural correlation, bounded pivoting (`max_depth`/`max_steps`), multi-dimensional assessment, and Markdown/JSON/CSV/STIX 2.1 outputs.
+- **Ingestion, Triage & Multi-Provider Enrichment:** Extracts and normalizes IPs, domains, URLs, hashes, and emails (including defanged indicators and `key=value` log fields) with concurrent lookups across AbuseIPDB, VirusTotal, AlienVault OTX, and CrowdSec CTI.
+- **Guided 5-Step Workflow & Export:** Covers Case & Scope, Ingestion & Triage, Evidence (with certainty levels and automatic SHA-256 digests), Relationships & Pivot, and Case Assessment with Markdown, STIX 2.1, CSV, and JSON exports.
 
 🔗 **[Explore ARGOS Repository →](https://github.com/Pendragon711/argos-cti)**
 
