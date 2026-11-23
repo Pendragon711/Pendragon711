@@ -103,11 +103,11 @@ Atuo na coleta, enriquecimento e operacionalização de dados de ameaças — co
 </p>
 
 - 🎓 **Graduação em Cibersegurança** — UniCesumar *(Em andamento)*
+- 📜 **Fortinet NSE 1 Certified in Cybersecurity** — Fortinet
 - 📜 **Google Cybersecurity Professional Certificate** — Coursera
 - 📜 **Cisco Junior Cybersecurity Analyst** — Cisco Networking Academy
 - 📜 **Analista de SOC na Era da IA** — IBSEC
 - 📜 **Fundamentos de SOC** — Be Safe Inc.
-- 📜 **AWS Cloud Practitioner Essentials** — Amazon Web Services
 - 📜 **Nano Course Cybersecurity** — FIAP
 
 <br/>
