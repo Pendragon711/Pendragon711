@@ -129,11 +129,11 @@ Mapping exposed attack surfaces is critical to anticipate exploitation vectors a
 ## 🎓 Education & Certifications
 
 - 🎓 **B.Tech in Cybersecurity** — UniCesumar *(In progress)*
+- 📜 **Fortinet NSE 1 Certified in Cybersecurity — Fortinet
 - 📜 **Google Cybersecurity Professional Certificate** — Coursera
 - 📜 **Cisco Junior Cybersecurity Analyst** — Cisco Networking Academy
 - 📜 **SOC Analyst in the AI Era** — IBSEC
 - 📜 **SOC Fundamentals** — Be Safe Inc.
-- 📜 **AWS Cloud Practitioner Essentials** — Amazon Web Services
 - 📜 **Nano Course Cybersecurity** — FIAP
 
 ---
