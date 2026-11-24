@@ -5,10 +5,10 @@
 </div>
 
 <p align="center">
-  <img src="./assets/hero-banner.svg" width="100%" alt="Daniel Widal - Cyber Threat Intelligence & Threat Hunting" />
+  <img src="./assets/hero-banner.svg" width="100%" alt="Daniel Widal - Analista SOC & Cyber Threat Intelligence" />
 </p>
 
-Atuo na coleta, enriquecimento e operacionalização de dados de ameaças — correlacionando **IOCs, TTPs e comportamentos adversários** para antecipar vetores de ataque, criar regras de detecção proativas e orientar a resposta a incidentes. Minha abordagem conecta **análise técnica de artefatos** (tráfego PCAP, malwares e logs de aplicação/rede) com **mapeamento via MITRE ATT&CK** para defesas em **Cloudflare WAF, SIEM (Wazuh) e Grafana**, mantendo em laboratório um **honeypot próprio em Python** como fonte primária de telemetria.
+Profissional de Segurança da Informação com foco em **Operações de SOC (N1/N2)**, **Cyber Threat Intelligence (CTI)** e **Threat Hunting**. Atuo na análise de alertas, investigação de tráfego e operacionalização de **IOCs e TTPs** para apoiar a resposta a incidentes e a defesa proativa. Minha abordagem conecta **análise técnica de artefatos** (tráfego PCAP, triagem de malware e logs de rede/aplicação) com **mapeamento via MITRE ATT&CK** para proteção em **Cloudflare WAF, Next-Generation Firewalls (FortiGate), SIEM (Wazuh) e Grafana/Loki**, mantendo em laboratório um **honeypot próprio em Python** como fonte de telemetria.
 
 <p align="left">
   <a href="#ciclo"><img src="./assets/nav-ciclo.svg" height="34" alt="Ciclo CTI" /></a>
@@ -49,7 +49,7 @@ Atuo na coleta, enriquecimento e operacionalização de dados de ameaças — co
 
 <p align="center">
   <a href="https://github.com/Pendragon711/argos-cti">
-    <img src="./assets/card-argos.svg" width="100%" alt="ARGOS Threat Intelligence Framework" />
+    <img src="./assets/card-argos.svg" width="100%" alt="ARGOS Threat Intelligence Platform" />
   </a>
 </p>
 
@@ -80,18 +80,19 @@ Atuo na coleta, enriquecimento e operacionalização de dados de ameaças — co
   <img src="https://img.shields.io/badge/VirusTotal-0a0b0e?style=for-the-badge&logo=virustotal&logoColor=D4AF37" alt="VirusTotal" />
 </p>
 
-**🛡️ Detection Engineering, SIEM & AppSec** — *Threat Hunting • Log Correlation • Custom Detection Rules • WAF Mitigation*
+**🛡️ SOC Operations, SIEM, WAF & Firewalls** — *Incident Triage • Log Correlation • Threat Hunting • Perimeter Mitigation*
 <p align="left">
   <img src="https://img.shields.io/badge/Wazuh-0a0b0e?style=for-the-badge&logo=wazuh&logoColor=D4AF37" alt="Wazuh" />
   <img src="https://img.shields.io/badge/Cloudflare%20WAF-0a0b0e?style=for-the-badge&logo=cloudflare&logoColor=D4AF37" alt="Cloudflare WAF" />
-  <img src="https://img.shields.io/badge/Grafana-0a0b0e?style=for-the-badge&logo=grafana&logoColor=D4AF37" alt="Grafana" />
+  <img src="https://img.shields.io/badge/FortiGate%20NGFW-0a0b0e?style=for-the-badge&logo=fortinet&logoColor=D4AF37" alt="FortiGate NGFW" />
+  <img src="https://img.shields.io/badge/Grafana%20%2F%20Loki-0a0b0e?style=for-the-badge&logo=grafana&logoColor=D4AF37" alt="Grafana / Loki" />
   <img src="https://img.shields.io/badge/SIEM-0a0b0e?style=for-the-badge&logo=elasticstack&logoColor=D4AF37" alt="SIEM" />
 </p>
 
 **⚙️ Automação & Infraestrutura**
 <p align="left">
-  <img src="https://img.shields.io/badge/Python-0a0b0e?style=for-the-badge&logo=python&logoColor=D4AF37" alt="Python" />
   <img src="https://img.shields.io/badge/Go-0a0b0e?style=for-the-badge&logo=go&logoColor=D4AF37" alt="Go" />
+  <img src="https://img.shields.io/badge/Python-0a0b0e?style=for-the-badge&logo=python&logoColor=D4AF37" alt="Python" />
   <img src="https://img.shields.io/badge/Linux-0a0b0e?style=for-the-badge&logo=linux&logoColor=D4AF37" alt="Linux" />
   <img src="https://img.shields.io/badge/Bash-0a0b0e?style=for-the-badge&logo=gnubash&logoColor=D4AF37" alt="Bash" />
 </p>
@@ -103,12 +104,24 @@ Atuo na coleta, enriquecimento e operacionalização de dados de ameaças — co
 </p>
 
 - 🎓 **Graduação em Cibersegurança** — UniCesumar *(Em andamento)*
-- 📜 **Fortinet NSE 1 Certified in Cybersecurity** — Fortinet
 - 📜 **Google Cybersecurity Professional Certificate** — Coursera
 - 📜 **Cisco Junior Cybersecurity Analyst** — Cisco Networking Academy
-- 📜 **Analista de SOC na Era da IA** — IBSEC
-- 📜 **Fundamentos de SOC** — Be Safe Inc.
+- 📜 **Fortinet NSE 3: FortiGate Operator** — Fortinet
+- 📜 **Fortinet NSE 2: Next Generation Firewalls** — Fortinet
+- 📜 **Fortinet NSE 1: Cybersecurity and Cloud Fundamentals** — Fortinet
+- 📜 **Analista SOC na Era da IA** — IBSEC
+- 📜 **Pentester na Era da IA** — IBSEC
 - 📜 **Nano Course Cybersecurity** — FIAP
+
+<p align="center">
+  <img src="./assets/badges/fortinet-nse3.png" width="84" alt="Fortinet NSE 3" />&nbsp;&nbsp;
+  <img src="./assets/badges/fortinet-nse2.png" width="84" alt="Fortinet NSE 2" />&nbsp;&nbsp;
+  <img src="./assets/badges/fortinet-nse1.png" width="84" alt="Fortinet NSE 1" />&nbsp;&nbsp;
+  <img src="./assets/badges/google-cybersecurity.png" width="84" alt="Google Cybersecurity" />&nbsp;&nbsp;
+  <img src="./assets/badges/cisco-cybersecurity.png" width="84" alt="Cisco Junior Cybersecurity Analyst" />&nbsp;&nbsp;
+  <img src="./assets/badges/ibsec.png" width="84" alt="IBSEC" />&nbsp;&nbsp;
+  <img src="./assets/badges/fiap-cybersecurity.png" width="84" alt="FIAP Cybersecurity" />
+</p>
 
 <br/>
 
