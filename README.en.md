@@ -104,6 +104,7 @@ Information Security Analyst focused on **SOC Operations (Tier 1/2)**, **Cyber T
 </p>
 
 - 🎓 **B.Tech in Cybersecurity** — UniCesumar *(In progress)*
+- 📜 **Foundation Level Threat Intelligence Analyst (FTIA)** — arcX
 - 📜 **Google Cybersecurity Professional Certificate** — Coursera
 - 📜 **Cisco Junior Cybersecurity Analyst** — Cisco Networking Academy
 - 📜 **Fortinet NSE 3: FortiGate Operator** — Fortinet
@@ -114,6 +115,7 @@ Information Security Analyst focused on **SOC Operations (Tier 1/2)**, **Cyber T
 - 📜 **Nano Course Cybersecurity** — FIAP
 
 <p align="center">
+  <img src="./assets/badges/FTIA.png" width="84" alt="Foundation Level Threat Intelligence Analyst (FTIA)" />&nbsp;&nbsp;
   <img src="./assets/badges/fortinet-nse3.png" width="84" alt="Fortinet NSE 3" />&nbsp;&nbsp;
   <img src="./assets/badges/fortinet-nse2.png" width="84" alt="Fortinet NSE 2" />&nbsp;&nbsp;
   <img src="./assets/badges/fortinet-nse1.png" width="84" alt="Fortinet NSE 1" />&nbsp;&nbsp;
